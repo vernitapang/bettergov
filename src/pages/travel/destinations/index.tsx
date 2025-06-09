@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, MapPin, Star, Calendar, Users, ExternalLink, Filter } from 'lucide-react';
+import { Search, MapPin, Star, Calendar, Users, ExternalLink, Filter, ChevronRight, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../../../components/SEO';
 import Button from '../../../components/ui/Button';
