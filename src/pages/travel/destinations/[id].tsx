@@ -166,7 +166,7 @@ const DestinationDetail: React.FC = () => {
                 </div>
               </div>
               <p className="text-xs text-white/70">
-                Photo by <a href={`https://unsplash.com/@${destination.imageCredit.toLowerCase().replace(/\s+/g, '')}`} className="underline hover:text-white" target="_blank" rel="noopener noreferrer">{destination.imageCredit}</a> on Unsplash
+                Photo by <a href={`https://unsplash.com/@${destination.imageCredit.toLowerCase().replace(/\s+/g, '')}`} className="underline hover:text-white\" target="_blank\" rel="noopener noreferrer">{destination.imageCredit}</a> on Unsplash
               </p>
             </div>
           </div>
