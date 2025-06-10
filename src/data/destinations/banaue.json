@@ -5,8 +5,8 @@
   "description": "Often called the \"Eighth Wonder of the World,\" these 2,000-year-old terraces were carved into the mountains by ancestors of the indigenous people.",
   "type": "cultural",
   "rating": 4.7,
-  "imageUrl": "https://images.pexels.com/photos/673020/pexels-photo-673020.jpeg",
-  "imageCredit": "eberhard grossgasteiger",
+  "imageUrl": "https://images.unsplash.com/photo-1596422846543-75c6fc197f11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
+  "imageCredit": "Alva Pratt",
   "bestTimeToVisit": "March to July",
   "activities": ["Trekking", "Cultural Tours", "Photography", "Village Visits"],
   "tags": ["UNESCO Heritage", "Indigenous Culture", "Mountains", "Hiking"],
@@ -42,19 +42,19 @@
   ],
   "gallery": [
     {
-      "url": "https://images.pexels.com/photos/673020/pexels-photo-673020.jpeg",
+      "url": "https://images.unsplash.com/photo-1596422846543-75c6fc197f11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
       "caption": "Panoramic view of the ancient rice terraces",
-      "credit": "eberhard grossgasteiger"
+      "credit": "Alva Pratt"
     },
     {
-      "url": "https://images.pexels.com/photos/2166458/pexels-photo-2166458.jpeg",
+      "url": "https://images.unsplash.com/photo-1596422846543-75c6fc197f11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
       "caption": "Local Ifugao cultural traditions",
-      "credit": "Flo Dahm"
+      "credit": "Alva Pratt"
     },
     {
-      "url": "https://images.pexels.com/photos/1647962/pexels-photo-1647962.jpeg",
+      "url": "https://images.unsplash.com/photo-1596422846543-75c6fc197f11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
       "caption": "Misty mountain views of Ifugao province",
-      "credit": "Valdemaras D."
+      "credit": "Alva Pratt"
     }
   ]
 }

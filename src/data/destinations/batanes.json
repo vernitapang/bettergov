@@ -5,8 +5,8 @@
   "description": "The northernmost province of the Philippines, known for its breathtaking landscapes, rolling hills, stone houses, and pristine beaches.",
   "type": "island",
   "rating": 4.8,
-  "imageUrl": "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg",
-  "imageCredit": "Asad Photo Maldives",
+  "imageUrl": "https://images.unsplash.com/photo-1629971234128-08bdcf959a7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+  "imageCredit": "Jed Villejo",
   "bestTimeToVisit": "March to June",
   "activities": ["Biking", "Cultural Tours", "Photography", "Lighthouse Visits", "Beach Hopping"],
   "tags": ["Rolling Hills", "Stone Houses", "Lighthouses", "Scenic"],
@@ -40,19 +40,19 @@
   ],
   "gallery": [
     {
-      "url": "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg",
+      "url": "https://images.unsplash.com/photo-1629971234128-08bdcf959a7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "caption": "Rolling hills meeting the sea",
-      "credit": "Asad Photo Maldives"
+      "credit": "Jed Villejo"
     },
     {
-      "url": "https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg",
+      "url": "https://images.unsplash.com/photo-1629971234128-08bdcf959a7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "caption": "Traditional stone houses built to withstand typhoons",
-      "credit": "Asad Photo Maldives"
+      "credit": "Jed Villejo"
     },
     {
-      "url": "https://images.pexels.com/photos/1450358/pexels-photo-1450358.jpeg",
+      "url": "https://images.unsplash.com/photo-1629971234128-08bdcf959a7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "caption": "Dramatic coastline with lighthouse",
-      "credit": "Asad Photo Maldives"
+      "credit": "Jed Villejo"
     }
   ]
 }

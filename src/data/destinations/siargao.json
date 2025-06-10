@@ -5,8 +5,8 @@
   "description": "Known as the \"Surfing Capital of the Philippines,\" Siargao is a teardrop-shaped island with perfect waves, lush mangroves, and a laid-back atmosphere.",
   "type": "beach",
   "rating": 4.8,
-  "imageUrl": "https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg",
-  "imageCredit": "Asad Photo Maldives",
+  "imageUrl": "https://images.unsplash.com/photo-1586500036706-41963de24d8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+  "imageCredit": "Rolands Varsbergs",
   "bestTimeToVisit": "September to November",
   "activities": ["Surfing", "Island Hopping", "Swimming", "Cliff Jumping", "Cave Exploration"],
   "tags": ["Surfing", "Island Life", "Adventure", "Nature"],
@@ -40,19 +40,19 @@
   ],
   "gallery": [
     {
-      "url": "https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg",
+      "url": "https://images.unsplash.com/photo-1586500036706-41963de24d8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
       "caption": "Perfect waves for surfing at Cloud 9",
-      "credit": "Asad Photo Maldives"
+      "credit": "Rolands Varsbergs"
     },
     {
-      "url": "https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg",
+      "url": "https://images.unsplash.com/photo-1602152332276-9d29c2a57a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "caption": "Pristine beaches around the island",
-      "credit": "Asad Photo Maldives"
+      "credit": "Fidel Fernando"
     },
     {
-      "url": "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg",
+      "url": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "caption": "Lush tropical landscapes and palm trees",
-      "credit": "Belle Co"
+      "credit": "Gian Paul Guinto"
     }
   ]
 }

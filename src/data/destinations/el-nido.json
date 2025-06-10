@@ -5,8 +5,8 @@
   "description": "El Nido is known for its stunning limestone cliffs, secret lagoons, and pristine beaches. It's a gateway to the Bacuit Archipelago with its hidden coves and rich marine life.",
   "type": "island",
   "rating": 4.9,
-  "imageUrl": "https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg",
-  "imageCredit": "Aron Visuals",
+  "imageUrl": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+  "imageCredit": "Cris Tagupa",
   "bestTimeToVisit": "December to May",
   "activities": ["Island Hopping", "Kayaking", "Snorkeling", "Diving", "Beach Camping"],
   "tags": ["Limestone Cliffs", "Lagoons", "Island Hopping", "Nature"],
@@ -40,19 +40,19 @@
   ],
   "gallery": [
     {
-      "url": "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg",
+      "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
       "caption": "Stunning limestone formations in the Bacuit Archipelago",
-      "credit": "Belle Co"
+      "credit": "Cris Tagupa"
     },
     {
-      "url": "https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg",
-      "caption": "Crystal clear waters perfect for snorkeling",
-      "credit": "Asad Photo Maldives"
+      "url": "https://images.unsplash.com/photo-1573720574697-e81bb555e6b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+      "caption": "Crystal clear lagoons perfect for swimming",
+      "credit": "Cris Tagupa"
     },
     {
-      "url": "https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg",
-      "caption": "Hidden lagoons accessible by kayak",
-      "credit": "Asad Photo Maldives"
+      "url": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1139&q=80",
+      "caption": "Island hopping adventures around El Nido",
+      "credit": "Christian Paul Del Rosario"
     }
   ]
 }

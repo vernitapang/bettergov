@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Search, MapPin, Star, Calendar, Users, ExternalLink, Filter, ChevronRight, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Search, MapPin, Star, Calendar, Users, Filter, ChevronRight, Globe } from 'lucide-react';
 import SEO from '../../../components/SEO';
 import Button from '../../../components/ui/Button';
 import destinationsData from '../../../data/destinations/index.json';
@@ -65,7 +65,7 @@ const TravelDestinationsPage: React.FC = () => {
       <div className="relative h-[70vh] overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg" 
+            src="https://images.unsplash.com/photo-1551966775-a4ddc8df052b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
             alt="Beautiful Philippine beach" 
             className="w-full h-full object-cover"
           />
@@ -95,7 +95,7 @@ const TravelDestinationsPage: React.FC = () => {
                 </Button>
               </div>
               <p className="text-xs text-white/70 mt-4">
-                Photo by <a href="https://www.pexels.com/@asadphotography/" className="underline hover:text-white" target="_blank" rel="noopener noreferrer">Asad Photo Maldives</a> on Pexels
+                Photo by <a href="https://unsplash.com/@seanoulashin" className="underline hover:text-white" target="_blank" rel="noopener noreferrer">Sean Oulashin</a> on Unsplash
               </p>
             </div>
           </div>
@@ -310,12 +310,12 @@ const TravelDestinationsPage: React.FC = () => {
             </div>
             <div className="md:w-1/2 relative min-h-[300px]">
               <img 
-                src="https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg" 
+                src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" 
                 alt="Philippine island" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute bottom-4 right-4 text-xs text-white/70">
-                Photo by <a href="https://www.pexels.com/@belle-co-99483/" className="underline hover:text-white" target="_blank" rel="noopener noreferrer">Belle Co</a> on Pexels
+                Photo by <a href="https://unsplash.com/@cristagupa" className="underline hover:text-white" target="_blank" rel="noopener noreferrer">Cris Tagupa</a> on Unsplash
               </div>
             </div>
           </div>

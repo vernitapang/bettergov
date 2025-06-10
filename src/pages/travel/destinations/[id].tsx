@@ -166,7 +166,7 @@ const DestinationDetail: React.FC = () => {
                 </div>
               </div>
               <p className="text-xs text-white/70">
-                Photo by <a href={`https://www.pexels.com/@${destination.imageCredit.toLowerCase().replace(/\s+/g, '-')}/`} className="underline hover:text-white\" target="_blank\" rel="noopener noreferrer">{destination.imageCredit}</a> on Pexels
+                Photo by <a href={`https://unsplash.com/@${destination.imageCredit.toLowerCase().replace(/\s+/g, '')}`} className="underline hover:text-white" target="_blank" rel="noopener noreferrer">{destination.imageCredit}</a> on Unsplash
               </p>
             </div>
           </div>
@@ -224,7 +224,7 @@ const DestinationDetail: React.FC = () => {
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                         <p className="text-white text-sm">{galleryImages[activeImageIndex].caption}</p>
                         <p className="text-white/70 text-xs">
-                          Photo by {galleryImages[activeImageIndex].credit} on Pexels
+                          Photo by {galleryImages[activeImageIndex].credit} on Unsplash
                         </p>
                       </div>
                     </div>

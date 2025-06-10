@@ -5,8 +5,8 @@
   "description": "Famous for its limestone karst landscapes, crystal-clear lagoons, and World War II shipwrecks, Coron offers some of the best diving experiences in the world.",
   "type": "island",
   "rating": 4.9,
-  "imageUrl": "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg",
-  "imageCredit": "Belle Co",
+  "imageUrl": "https://images.unsplash.com/photo-1573720574697-e81bb555e6b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+  "imageCredit": "Cris Tagupa",
   "bestTimeToVisit": "November to May",
   "activities": ["Diving", "Snorkeling", "Island Hopping", "Hot Springs", "Kayaking"],
   "tags": ["Diving", "Shipwrecks", "Lagoons", "Adventure"],
@@ -40,19 +40,19 @@
   ],
   "gallery": [
     {
-      "url": "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg",
+      "url": "https://images.unsplash.com/photo-1573720574697-e81bb555e6b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
       "caption": "Stunning limestone formations and turquoise waters",
-      "credit": "Belle Co"
+      "credit": "Cris Tagupa"
     },
     {
-      "url": "https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg",
+      "url": "https://images.unsplash.com/photo-1551966775-a4ddc8df052b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "caption": "Crystal clear lagoons perfect for swimming",
-      "credit": "Asad Photo Maldives"
+      "credit": "Sean Oulashin"
     },
     {
-      "url": "https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg",
+      "url": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1139&q=80",
       "caption": "Island hopping adventures around Coron",
-      "credit": "Asad Photo Maldives"
+      "credit": "Christian Paul Del Rosario"
     }
   ]
 }

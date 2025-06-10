@@ -5,8 +5,8 @@
   "description": "A geological formation of more than 1,200 perfectly cone-shaped hills that turn chocolate-brown during the dry season, creating a unique landscape.",
   "type": "mountain",
   "rating": 4.6,
-  "imageUrl": "https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg",
-  "imageCredit": "Jaime Reimer",
+  "imageUrl": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+  "imageCredit": "Eibner Saliba",
   "bestTimeToVisit": "November to April",
   "activities": ["Sightseeing", "ATV Rides", "Hiking", "Photography"],
   "tags": ["Natural Wonder", "Geological Formation", "Scenic Views"],
@@ -40,19 +40,19 @@
   ],
   "gallery": [
     {
-      "url": "https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg",
+      "url": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "caption": "Panoramic view of the Chocolate Hills during dry season",
-      "credit": "Jaime Reimer"
+      "credit": "Eibner Saliba"
     },
     {
-      "url": "https://images.pexels.com/photos/2387876/pexels-photo-2387876.jpeg",
+      "url": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "caption": "The hills stretching to the horizon",
-      "credit": "Jaime Reimer"
+      "credit": "Eibner Saliba"
     },
     {
-      "url": "https://images.pexels.com/photos/2387871/pexels-photo-2387871.jpeg",
+      "url": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "caption": "Lush green hills during rainy season",
-      "credit": "Jaime Reimer"
+      "credit": "Eibner Saliba"
     }
   ]
 }

@@ -5,8 +5,8 @@
   "description": "Famous for its pristine white sand beaches and crystal-clear waters, Boracay is a tropical paradise that offers a perfect blend of relaxation and adventure.",
   "type": "beach",
   "rating": 4.8,
-  "imageUrl": "https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg",
-  "imageCredit": "Asad Photo Maldives",
+  "imageUrl": "https://images.unsplash.com/photo-1551966775-a4ddc8df052b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+  "imageCredit": "Sean Oulashin",
   "bestTimeToVisit": "November to May",
   "activities": ["Swimming", "Snorkeling", "Island Hopping", "Parasailing", "Nightlife"],
   "tags": ["White Beach", "Island", "Luxury", "Nightlife"],
@@ -40,19 +40,19 @@
   ],
   "gallery": [
     {
-      "url": "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg",
+      "url": "https://images.unsplash.com/photo-1551966775-a4ddc8df052b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "caption": "Crystal clear waters perfect for swimming",
-      "credit": "Belle Co"
+      "credit": "Sean Oulashin"
     },
     {
-      "url": "https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg",
+      "url": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1139&q=80",
       "caption": "Stunning sunset views from White Beach",
-      "credit": "Aron Visuals"
+      "credit": "Christian Paul Del Rosario"
     },
     {
-      "url": "https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg",
+      "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80",
       "caption": "Water activities and island hopping adventures",
-      "credit": "Asad Photo Maldives"
+      "credit": "Sean Oulashin"
     }
   ]
 }
