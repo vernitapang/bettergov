@@ -1,0 +1,136 @@
+{
+  "destinations": [
+    {
+      "id": "boracay",
+      "name": "Boracay",
+      "location": "Aklan",
+      "shortDescription": "Famous for its pristine white sand beaches and crystal-clear waters",
+      "type": "beach",
+      "rating": 4.8,
+      "featuredImageUrl": "https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg",
+      "imageCredit": "Asad Photo Maldives",
+      "tags": ["White Beach", "Island", "Luxury", "Nightlife"]
+    },
+    {
+      "id": "el-nido",
+      "name": "El Nido",
+      "location": "Palawan",
+      "shortDescription": "Known for its stunning limestone cliffs, secret lagoons, and pristine beaches",
+      "type": "island",
+      "rating": 4.9,
+      "featuredImageUrl": "https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg",
+      "imageCredit": "Aron Visuals",
+      "tags": ["Limestone Cliffs", "Lagoons", "Island Hopping", "Nature"]
+    },
+    {
+      "id": "banaue",
+      "name": "Banaue Rice Terraces",
+      "location": "Ifugao",
+      "shortDescription": "Often called the \"Eighth Wonder of the World,\" these 2,000-year-old terraces were carved into the mountains",
+      "type": "cultural",
+      "rating": 4.7,
+      "featuredImageUrl": "https://images.pexels.com/photos/673020/pexels-photo-673020.jpeg",
+      "imageCredit": "eberhard grossgasteiger",
+      "tags": ["UNESCO Heritage", "Indigenous Culture", "Mountains", "Hiking"]
+    },
+    {
+      "id": "chocolate-hills",
+      "name": "Chocolate Hills",
+      "location": "Bohol",
+      "shortDescription": "A geological formation of more than 1,200 perfectly cone-shaped hills",
+      "type": "mountain",
+      "rating": 4.6,
+      "featuredImageUrl": "https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg",
+      "imageCredit": "Jaime Reimer",
+      "tags": ["Natural Wonder", "Geological Formation", "Scenic Views"]
+    },
+    {
+      "id": "vigan",
+      "name": "Vigan",
+      "location": "Ilocos Sur",
+      "shortDescription": "A UNESCO World Heritage Site known for its preserved Spanish colonial architecture",
+      "type": "cultural",
+      "rating": 4.7,
+      "featuredImageUrl": "https://images.pexels.com/photos/5358099/pexels-photo-5358099.jpeg",
+      "imageCredit": "Engin Akyurt",
+      "tags": ["UNESCO Heritage", "Colonial Architecture", "Historical", "Cultural"]
+    },
+    {
+      "id": "siargao",
+      "name": "Siargao",
+      "location": "Surigao del Norte",
+      "shortDescription": "Known as the \"Surfing Capital of the Philippines,\" with perfect waves and laid-back atmosphere",
+      "type": "beach",
+      "rating": 4.8,
+      "featuredImageUrl": "https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg",
+      "imageCredit": "Asad Photo Maldives",
+      "tags": ["Surfing", "Island Life", "Adventure", "Nature"]
+    },
+    {
+      "id": "intramuros",
+      "name": "Intramuros",
+      "location": "Manila",
+      "shortDescription": "The historic walled city of Manila, featuring Spanish-era architecture and fortifications",
+      "type": "city",
+      "rating": 4.5,
+      "featuredImageUrl": "https://images.pexels.com/photos/2104882/pexels-photo-2104882.jpeg",
+      "imageCredit": "Flo Dahm",
+      "tags": ["Historical", "Colonial", "Urban", "Cultural"]
+    },
+    {
+      "id": "coron",
+      "name": "Coron",
+      "location": "Palawan",
+      "shortDescription": "Famous for its limestone karst landscapes, crystal-clear lagoons, and World War II shipwrecks",
+      "type": "island",
+      "rating": 4.9,
+      "featuredImageUrl": "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg",
+      "imageCredit": "Belle Co",
+      "tags": ["Diving", "Shipwrecks", "Lagoons", "Adventure"]
+    },
+    {
+      "id": "mt-pulag",
+      "name": "Mount Pulag",
+      "location": "Benguet",
+      "shortDescription": "The third-highest mountain in the Philippines, famous for its \"sea of clouds\" phenomenon",
+      "type": "mountain",
+      "rating": 4.7,
+      "featuredImageUrl": "https://images.pexels.com/photos/1647962/pexels-photo-1647962.jpeg",
+      "imageCredit": "Valdemaras D.",
+      "tags": ["Hiking", "Sea of Clouds", "Mountain", "Adventure"]
+    },
+    {
+      "id": "cebu",
+      "name": "Cebu",
+      "location": "Central Visayas",
+      "shortDescription": "A vibrant island province offering urban experiences, historical sites, and beautiful beaches",
+      "type": "city",
+      "rating": 4.6,
+      "featuredImageUrl": "https://images.pexels.com/photos/2104882/pexels-photo-2104882.jpeg",
+      "imageCredit": "Flo Dahm",
+      "tags": ["Urban", "Beaches", "Adventure", "Food"]
+    },
+    {
+      "id": "batanes",
+      "name": "Batanes",
+      "location": "Cagayan Valley",
+      "shortDescription": "The northernmost province known for breathtaking landscapes, rolling hills, and stone houses",
+      "type": "island",
+      "rating": 4.8,
+      "featuredImageUrl": "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg",
+      "imageCredit": "Asad Photo Maldives",
+      "tags": ["Rolling Hills", "Stone Houses", "Lighthouses", "Scenic"]
+    },
+    {
+      "id": "davao",
+      "name": "Davao",
+      "location": "Mindanao",
+      "shortDescription": "A major city that offers urban comforts while being a gateway to natural attractions like Mount Apo",
+      "type": "city",
+      "rating": 4.5,
+      "featuredImageUrl": "https://images.pexels.com/photos/1538177/pexels-photo-1538177.jpeg",
+      "imageCredit": "Nextvoyage",
+      "tags": ["Urban", "Nature", "Adventure", "Food"]
+    }
+  ]
+}

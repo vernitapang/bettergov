@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search, MapPin, Star, Calendar, Users, ExternalLink, Filter, ChevronRight, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../../../components/SEO';
 import Button from '../../../components/ui/Button';
+import destinationsData from '../../../data/destinations/index.json';
 
 // Define destination types
 type DestinationType = 'beach' | 'mountain' | 'city' | 'cultural' | 'island' | 'all';
@@ -11,184 +12,31 @@ interface Destination {
   id: string;
   name: string;
   location: string;
-  description: string;
-  type: DestinationType;
+  shortDescription: string;
+  type: string;
   rating: number;
-  imageUrl: string;
+  featuredImageUrl: string;
   imageCredit: string;
-  bestTimeToVisit: string;
-  activities: string[];
   tags: string[];
 }
-
-const destinations: Destination[] = [
-  {
-    id: 'boracay',
-    name: 'Boracay',
-    location: 'Aklan',
-    description: 'Famous for its pristine white sand beaches and crystal-clear waters, Boracay is a tropical paradise that offers a perfect blend of relaxation and adventure.',
-    type: 'beach',
-    rating: 4.8,
-    imageUrl: 'https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg',
-    imageCredit: 'Asad Photo Maldives',
-    bestTimeToVisit: 'November to May',
-    activities: ['Swimming', 'Snorkeling', 'Island Hopping', 'Parasailing', 'Nightlife'],
-    tags: ['White Beach', 'Island', 'Luxury', 'Nightlife']
-  },
-  {
-    id: 'palawan',
-    name: 'El Nido',
-    location: 'Palawan',
-    description: 'El Nido is known for its stunning limestone cliffs, secret lagoons, and pristine beaches. It\'s a gateway to the Bacuit Archipelago with its hidden coves and rich marine life.',
-    type: 'island',
-    rating: 4.9,
-    imageUrl: 'https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg',
-    imageCredit: 'Aron Visuals',
-    bestTimeToVisit: 'December to May',
-    activities: ['Island Hopping', 'Kayaking', 'Snorkeling', 'Diving', 'Beach Camping'],
-    tags: ['Limestone Cliffs', 'Lagoons', 'Island Hopping', 'Nature']
-  },
-  {
-    id: 'banaue',
-    name: 'Banaue Rice Terraces',
-    location: 'Ifugao',
-    description: 'Often called the "Eighth Wonder of the World," these 2,000-year-old terraces were carved into the mountains by ancestors of the indigenous people.',
-    type: 'cultural',
-    rating: 4.7,
-    imageUrl: 'https://images.pexels.com/photos/673020/pexels-photo-673020.jpeg',
-    imageCredit: 'eberhard grossgasteiger',
-    bestTimeToVisit: 'March to July',
-    activities: ['Trekking', 'Cultural Tours', 'Photography', 'Village Visits'],
-    tags: ['UNESCO Heritage', 'Indigenous Culture', 'Mountains', 'Hiking']
-  },
-  {
-    id: 'chocolate-hills',
-    name: 'Chocolate Hills',
-    location: 'Bohol',
-    description: 'A geological formation of more than 1,200 perfectly cone-shaped hills that turn chocolate-brown during the dry season, creating a unique landscape.',
-    type: 'mountain',
-    rating: 4.6,
-    imageUrl: 'https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg',
-    imageCredit: 'Jaime Reimer',
-    bestTimeToVisit: 'November to April',
-    activities: ['Sightseeing', 'ATV Rides', 'Hiking', 'Photography'],
-    tags: ['Natural Wonder', 'Geological Formation', 'Scenic Views']
-  },
-  {
-    id: 'vigan',
-    name: 'Vigan',
-    location: 'Ilocos Sur',
-    description: 'A UNESCO World Heritage Site known for its preserved Spanish colonial architecture and cobblestone streets, offering a glimpse into the Philippines\' colonial past.',
-    type: 'cultural',
-    rating: 4.7,
-    imageUrl: 'https://images.pexels.com/photos/5358099/pexels-photo-5358099.jpeg',
-    imageCredit: 'Engin Akyurt',
-    bestTimeToVisit: 'November to February',
-    activities: ['Heritage Tours', 'Kalesa Rides', 'Food Trips', 'Craft Shopping'],
-    tags: ['UNESCO Heritage', 'Colonial Architecture', 'Historical', 'Cultural']
-  },
-  {
-    id: 'siargao',
-    name: 'Siargao',
-    location: 'Surigao del Norte',
-    description: 'Known as the "Surfing Capital of the Philippines," Siargao is a teardrop-shaped island with perfect waves, lush mangroves, and a laid-back atmosphere.',
-    type: 'beach',
-    rating: 4.8,
-    imageUrl: 'https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg',
-    imageCredit: 'Asad Photo Maldives',
-    bestTimeToVisit: 'September to November',
-    activities: ['Surfing', 'Island Hopping', 'Swimming', 'Cliff Jumping', 'Cave Exploration'],
-    tags: ['Surfing', 'Island Life', 'Adventure', 'Nature']
-  },
-  {
-    id: 'manila',
-    name: 'Intramuros',
-    location: 'Manila',
-    description: 'The historic walled city of Manila, featuring Spanish-era architecture, churches, and fortifications that tell the story of the Philippines\' colonial history.',
-    type: 'city',
-    rating: 4.5,
-    imageUrl: 'https://images.pexels.com/photos/2104882/pexels-photo-2104882.jpeg',
-    imageCredit: 'Flo Dahm',
-    bestTimeToVisit: 'December to February',
-    activities: ['Historical Tours', 'Museum Visits', 'Kalesa Rides', 'Food Trips'],
-    tags: ['Historical', 'Colonial', 'Urban', 'Cultural']
-  },
-  {
-    id: 'coron',
-    name: 'Coron',
-    location: 'Palawan',
-    description: 'Famous for its limestone karst landscapes, crystal-clear lagoons, and World War II shipwrecks, Coron offers some of the best diving experiences in the world.',
-    type: 'island',
-    rating: 4.9,
-    imageUrl: 'https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg',
-    imageCredit: 'Belle Co',
-    bestTimeToVisit: 'November to May',
-    activities: ['Diving', 'Snorkeling', 'Island Hopping', 'Hot Springs', 'Kayaking'],
-    tags: ['Diving', 'Shipwrecks', 'Lagoons', 'Adventure']
-  },
-  {
-    id: 'mt-pulag',
-    name: 'Mount Pulag',
-    location: 'Benguet',
-    description: 'The third-highest mountain in the Philippines, famous for its "sea of clouds" phenomenon and diverse ecosystems from mossy forests to grasslands.',
-    type: 'mountain',
-    rating: 4.7,
-    imageUrl: 'https://images.pexels.com/photos/1647962/pexels-photo-1647962.jpeg',
-    imageCredit: 'Valdemaras D.',
-    bestTimeToVisit: 'December to May',
-    activities: ['Hiking', 'Camping', 'Stargazing', 'Photography', 'Bird Watching'],
-    tags: ['Hiking', 'Sea of Clouds', 'Mountain', 'Adventure']
-  },
-  {
-    id: 'cebu',
-    name: 'Cebu',
-    location: 'Central Visayas',
-    description: 'A vibrant island province offering a mix of urban experiences, historical sites, beautiful beaches, and thrilling adventure activities.',
-    type: 'city',
-    rating: 4.6,
-    imageUrl: 'https://images.pexels.com/photos/2104882/pexels-photo-2104882.jpeg',
-    imageCredit: 'Flo Dahm',
-    bestTimeToVisit: 'January to May',
-    activities: ['City Tours', 'Island Hopping', 'Swimming with Whale Sharks', 'Canyoneering', 'Food Trips'],
-    tags: ['Urban', 'Beaches', 'Adventure', 'Food']
-  },
-  {
-    id: 'batanes',
-    name: 'Batanes',
-    location: 'Cagayan Valley',
-    description: 'The northernmost province of the Philippines, known for its breathtaking landscapes, rolling hills, stone houses, and pristine beaches.',
-    type: 'island',
-    rating: 4.8,
-    imageUrl: 'https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg',
-    imageCredit: 'Asad Photo Maldives',
-    bestTimeToVisit: 'March to June',
-    activities: ['Biking', 'Cultural Tours', 'Photography', 'Lighthouse Visits', 'Beach Hopping'],
-    tags: ['Rolling Hills', 'Stone Houses', 'Lighthouses', 'Scenic']
-  },
-  {
-    id: 'davao',
-    name: 'Davao',
-    location: 'Mindanao',
-    description: 'A major city in Mindanao that offers urban comforts while being a gateway to natural attractions like Mount Apo, the country\'s highest peak.',
-    type: 'city',
-    rating: 4.5,
-    imageUrl: 'https://images.pexels.com/photos/1538177/pexels-photo-1538177.jpeg',
-    imageCredit: 'Nextvoyage',
-    bestTimeToVisit: 'March to May',
-    activities: ['City Tours', 'Mount Apo Hiking', 'Fruit Farms Visits', 'Eagle Center Visit', 'Beach Trips'],
-    tags: ['Urban', 'Nature', 'Adventure', 'Food']
-  }
-];
 
 const TravelDestinationsPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedType, setSelectedType] = useState<DestinationType>('all');
+  const [destinations, setDestinations] = useState<Destination[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  // Load destinations data
+  useEffect(() => {
+    setDestinations(destinationsData.destinations);
+    setLoading(false);
+  }, []);
 
   // Filter destinations based on search term and selected type
   const filteredDestinations = destinations.filter(destination => {
     const matchesSearch = 
       destination.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      destination.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      destination.shortDescription.toLowerCase().includes(searchTerm.toLowerCase()) ||
       destination.location.toLowerCase().includes(searchTerm.toLowerCase()) ||
       destination.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
     
@@ -196,6 +44,14 @@ const TravelDestinationsPage: React.FC = () => {
     
     return matchesSearch && matchesType;
   });
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -329,7 +185,7 @@ const TravelDestinationsPage: React.FC = () => {
                 <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
                   <div className="relative h-64 overflow-hidden">
                     <img 
-                      src={destination.imageUrl} 
+                      src={destination.featuredImageUrl} 
                       alt={destination.name} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -351,7 +207,7 @@ const TravelDestinationsPage: React.FC = () => {
                     </div>
                   </div>
                   <div className="p-5 flex-grow flex flex-col">
-                    <p className="text-gray-600 mb-4 flex-grow">{destination.description}</p>
+                    <p className="text-gray-600 mb-4 flex-grow">{destination.shortDescription}</p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {destination.tags.slice(0, 3).map((tag, index) => (
                         <span key={index} className="px-2 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">

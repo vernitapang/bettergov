@@ -1,18 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { MapPin, Calendar, Star, Clock, Users, ArrowLeft, ExternalLink, Heart, Share2, Bookmark, Activity } from 'lucide-react';
 import Button from '../../../components/ui/Button';
 import SEO from '../../../components/SEO';
-
-// Define destination types
-type DestinationType = 'beach' | 'mountain' | 'city' | 'cultural' | 'island';
+import destinationsIndex from '../../../data/destinations/index.json';
 
 interface Destination {
   id: string;
   name: string;
   location: string;
   description: string;
-  type: DestinationType;
+  type: string;
   rating: number;
   imageUrl: string;
   imageCredit: string;
@@ -28,199 +26,47 @@ interface Destination {
   gallery?: {url: string, caption: string, credit: string}[];
 }
 
-// This would typically come from an API or database
-const destinations: Destination[] = [
-  {
-    id: 'boracay',
-    name: 'Boracay',
-    location: 'Aklan',
-    description: 'Famous for its pristine white sand beaches and crystal-clear waters, Boracay is a tropical paradise that offers a perfect blend of relaxation and adventure.',
-    type: 'beach',
-    rating: 4.8,
-    imageUrl: 'https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg',
-    imageCredit: 'Asad Photo Maldives',
-    bestTimeToVisit: 'November to May',
-    activities: ['Swimming', 'Snorkeling', 'Island Hopping', 'Parasailing', 'Nightlife'],
-    tags: ['White Beach', 'Island', 'Luxury', 'Nightlife'],
-    longDescription: 'Boracay is a small island in the central Philippines, known worldwide for its stunning White Beach, a 4-kilometer stretch of powdery white sand lined with palm trees, resorts, restaurants, and bars. After undergoing a six-month rehabilitation in 2018, the island has been restored to its pristine condition with stricter environmental regulations in place.\n\nBeyond White Beach, Boracay offers numerous other attractions. Puka Shell Beach on the northern tip is less crowded and known for its natural beauty. Bulabog Beach on the eastern side is a hub for kiteboarding and windsurfing. The island also features hidden coves, viewpoints like Mount Luho, and vibrant marine life perfect for snorkeling and diving.\n\nBoracay comes alive at night with beachfront dining, fire dancing shows, and a variety of bars and clubs. Despite its small size (just 7 kilometers long), Boracay offers a diverse range of experiences from relaxation to adventure, making it a perfect destination for all types of travelers.',
-    howToGetThere: 'To reach Boracay, fly to either Kalibo International Airport (approximately 2 hours from Boracay) or Caticlan Airport (just 15 minutes from Boracay). From either airport, take a land transfer to Caticlan Jetty Port, then a 15-minute boat ride to Boracay Island. Upon arrival at Boracay, tricycles and e-trikes are available for transportation to your accommodation.',
-    whereToStay: [
-      'Luxury: Shangri-La Boracay Resort & Spa, The Lind Boracay, Crimson Resort and Spa Boracay',
-      'Mid-range: Coast Boracay, Henann Garden Resort, Astoria Current',
-      'Budget: Frendz Resort & Hostel, MNL Beach Hostel Boracay, Dormitels Boracay'
-    ],
-    nearbyAttractions: [
-      'Ariel\'s Point for cliff diving',
-      'Crystal Cove Island',
-      'Crocodile Island for snorkeling',
-      'Motag Living Museum',
-      'Willy\'s Rock'
-    ],
-    localCuisine: [
-      'Freshly grilled seafood at D\'Talipapa',
-      'Calamansi muffins from Real Coffee & Tea Café',
-      'Chori burger (Filipino chorizo burger)',
-      'Coconut-based dishes and fresh tropical fruits',
-      'Filipino fusion cuisine at Sunny Side Café'
-    ],
-    travelTips: [
-      'Book accommodations well in advance, especially during peak season',
-      'Bring reef-safe sunscreen to protect the marine environment',
-      'Respect the island\'s environmental regulations, including no smoking/drinking on the beach',
-      'The island has an environmental fee (approximately PHP 150) collected upon arrival',
-      'Most establishments accept credit cards, but it\'s good to have cash for small vendors'
-    ],
-    gallery: [
-      {
-        url: 'https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg',
-        caption: 'Crystal clear waters perfect for swimming',
-        credit: 'Belle Co'
-      },
-      {
-        url: 'https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg',
-        caption: 'Stunning sunset views from White Beach',
-        credit: 'Aron Visuals'
-      },
-      {
-        url: 'https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg',
-        caption: 'Water activities and island hopping adventures',
-        credit: 'Asad Photo Maldives'
-      }
-    ]
-  },
-  {
-    id: 'palawan',
-    name: 'El Nido',
-    location: 'Palawan',
-    description: 'El Nido is known for its stunning limestone cliffs, secret lagoons, and pristine beaches. It\'s a gateway to the Bacuit Archipelago with its hidden coves and rich marine life.',
-    type: 'island',
-    rating: 4.9,
-    imageUrl: 'https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg',
-    imageCredit: 'Aron Visuals',
-    bestTimeToVisit: 'December to May',
-    activities: ['Island Hopping', 'Kayaking', 'Snorkeling', 'Diving', 'Beach Camping'],
-    tags: ['Limestone Cliffs', 'Lagoons', 'Island Hopping', 'Nature'],
-    longDescription: 'El Nido, located at the northern tip of Palawan Island, is a paradise of limestone karst landscapes, hidden lagoons, and pristine beaches. Often described as one of the most beautiful beach destinations in the world, El Nido serves as the gateway to the stunning Bacuit Archipelago, a collection of islands with dramatic rock formations rising from crystal-clear waters.\n\nThe area is famous for its island-hopping tours, categorized as Tours A, B, C, and D, each exploring different islands, lagoons, and beaches. Highlights include the Big and Small Lagoons, Secret Lagoon, Hidden Beach, and Snake Island with its S-shaped sandbar. The underwater world is equally impressive, with vibrant coral reefs and diverse marine life making it a haven for snorkelers and divers.\n\nEl Nido town itself has transformed from a sleepy fishing village to a tourism hub, though it still maintains much of its laid-back charm. The area offers a range of accommodations from luxury resorts on private islands to budget-friendly hostels in town. Despite its growing popularity, El Nido remains a place of extraordinary natural beauty where visitors can disconnect and immerse themselves in nature.',
-    howToGetThere: 'To reach El Nido, fly to Puerto Princesa International Airport, then take a 5-6 hour van or bus ride to El Nido town. Alternatively, direct flights to El Nido Airport (Lio Airport) are available from Manila and Cebu, though these tend to be more expensive. From El Nido town, boats can take you to the various islands and attractions in the Bacuit Archipelago.',
-    whereToStay: [
-      'Luxury: El Nido Resorts (Miniloc, Lagen, Pangulasian, or Apulit Island), Cauayan Island Resort, Matinloc Resort',
-      'Mid-range: Coco Resort, The Nest El Nido, Maremegmeg Beach Club',
-      'Budget: Outpost Beach Hostel, Spin Designer Hostel, Our Melting Pot Hostel'
-    ],
-    nearbyAttractions: [
-      'Nacpan Beach - a 4-kilometer stretch of golden sand',
-      'Duli Beach - popular for surfing',
-      'Taraw Cliff for panoramic views (guided climb required)',
-      'Marimegmeg Beach for sunset views',
-      'Lio Beach - a developing eco-tourism estate'
-    ],
-    localCuisine: [
-      'Fresh seafood grilled on the beach',
-      'Coconut-based dishes like Ginataang Manok (chicken in coconut milk)',
-      'Halo-halo (Filipino shaved ice dessert)',
-      'Kinilaw (Filipino ceviche)',
-      'Tamilok (woodworm) for the adventurous eater'
-    ],
-    travelTips: [
-      'Book island hopping tours in advance during peak season',
-      'Bring cash as ATMs are limited and many places don\'t accept cards',
-      'Pack reef-safe sunscreen and insect repellent',
-      'Consider staying in town for more dining options or on the islands for seclusion',
-      'The environmental fee is approximately PHP 200 and valid for 10 days'
-    ],
-    gallery: [
-      {
-        url: 'https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg',
-        caption: 'Stunning limestone formations in the Bacuit Archipelago',
-        credit: 'Belle Co'
-      },
-      {
-        url: 'https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg',
-        caption: 'Crystal clear waters perfect for snorkeling',
-        credit: 'Asad Photo Maldives'
-      },
-      {
-        url: 'https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg',
-        caption: 'Hidden lagoons accessible by kayak',
-        credit: 'Asad Photo Maldives'
-      }
-    ]
-  },
-  {
-    id: 'banaue',
-    name: 'Banaue Rice Terraces',
-    location: 'Ifugao',
-    description: 'Often called the "Eighth Wonder of the World," these 2,000-year-old terraces were carved into the mountains by ancestors of the indigenous people.',
-    type: 'cultural',
-    rating: 4.7,
-    imageUrl: 'https://images.pexels.com/photos/673020/pexels-photo-673020.jpeg',
-    imageCredit: 'eberhard grossgasteiger',
-    bestTimeToVisit: 'March to July',
-    activities: ['Trekking', 'Cultural Tours', 'Photography', 'Village Visits'],
-    tags: ['UNESCO Heritage', 'Indigenous Culture', 'Mountains', 'Hiking'],
-    longDescription: 'The Banaue Rice Terraces are ancient engineering marvels carved into the mountains of Ifugao province by the ancestors of the indigenous Ifugao people. Often referred to as the "Eighth Wonder of the World," these terraces were built largely by hand approximately 2,000 years ago and follow the natural contours of the mountains.\n\nThe terraces demonstrate the remarkable ingenuity of the Ifugao people, featuring an elaborate irrigation system that draws water from the mountaintop forests. They rise to an altitude of about 1,500 meters (4,900 feet) and cover over 10,000 square kilometers of mountainside. If placed end to end, the terraces would stretch more than 22,000 kilometers, circling half the globe.\n\nBeyond their agricultural function, the rice terraces represent the harmony between humans and their environment and are deeply integrated with the Ifugao cultural heritage, including rituals, folk traditions, and sustainable farming practices passed down through generations. The UNESCO World Heritage Site actually encompasses several terrace clusters in the region, including Batad and Bangaan, each offering unique perspectives and trekking experiences.',
-    howToGetThere: 'From Manila, take an 8-10 hour bus ride to Banaue town. Major bus companies like Ohayami Trans and Coda Lines offer overnight trips. Alternatively, you can take a flight to Cauayan Airport in Isabela province, followed by a 3-hour drive to Banaue. From Banaue town, jeepneys and tricycles can take you to various viewpoints and trailheads for the different terrace clusters.',
-    whereToStay: [
-      'Banaue Hotel and Youth Hostel - government-run hotel with good views',
-      'Banaue Homestay - authentic experience with local families',
-      'Batad Pension and Restaurant - located near the Batad Rice Terraces',
-      'Hillside Inn - budget-friendly option in Banaue town',
-      'Uyami\'s Green View Restaurant and Homestay - offers good views of the terraces'
-    ],
-    nearbyAttractions: [
-      'Batad Rice Terraces - amphitheater-like terraces',
-      'Tappiya Waterfall - accessible via trek from Batad',
-      'Bangaan Rice Terraces - UNESCO Heritage Site',
-      'Hapao Rice Terraces - less visited but equally beautiful',
-      'Sagada - nearby town known for hanging coffins and caves'
-    ],
-    localCuisine: [
-      'Pinikpikan - traditional Ifugao chicken dish',
-      'Etag - preserved pork delicacy',
-      'Binakle - sticky rice cake',
-      'Rice wine (Tapuy) - traditional alcoholic beverage',
-      'Organic red rice grown on the terraces'
-    ],
-    travelTips: [
-      'Wear proper hiking shoes as paths can be slippery, especially during rainy season',
-      'Hire a local guide for trekking - they provide cultural insights and ensure safety',
-      'Respect local customs and ask permission before taking photos of residents',
-      'Bring warm clothing as mountain temperatures can drop at night',
-      'Allow at least 2-3 days to properly explore the different terrace clusters'
-    ],
-    gallery: [
-      {
-        url: 'https://images.pexels.com/photos/673020/pexels-photo-673020.jpeg',
-        caption: 'Panoramic view of the ancient rice terraces',
-        credit: 'eberhard grossgasteiger'
-      },
-      {
-        url: 'https://images.pexels.com/photos/2166458/pexels-photo-2166458.jpeg',
-        caption: 'Local Ifugao cultural traditions',
-        credit: 'Flo Dahm'
-      },
-      {
-        url: 'https://images.pexels.com/photos/1647962/pexels-photo-1647962.jpeg',
-        caption: 'Misty mountain views of Ifugao province',
-        credit: 'Valdemaras D.'
-      }
-    ]
-  },
-  // Additional destinations would be defined here
-];
-
 const DestinationDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [destination, setDestination] = useState<Destination | null>(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [relatedDestinations, setRelatedDestinations] = useState<any[]>([]);
 
   useEffect(() => {
-    // In a real app, this would be an API call
-    setLoading(true);
-    const foundDestination = destinations.find(d => d.id === id);
-    setDestination(foundDestination || null);
-    setLoading(false);
+    const fetchDestination = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+        
+        // Fetch the specific destination data
+        const response = await fetch(`/src/data/destinations/${id}.json`);
+        if (!response.ok) {
+          throw new Error('Destination not found');
+        }
+        
+        const data = await response.json();
+        setDestination(data);
+        
+        // Find related destinations of the same type
+        const allDestinations = destinationsIndex.destinations;
+        const related = allDestinations
+          .filter(d => d.id !== id && d.type === data.type)
+          .slice(0, 3);
+        
+        setRelatedDestinations(related);
+      } catch (err) {
+        console.error('Error fetching destination:', err);
+        setError(err instanceof Error ? err.message : 'Failed to load destination');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (id) {
+      fetchDestination();
+    }
   }, [id]);
 
   if (loading) {
@@ -231,7 +77,7 @@ const DestinationDetail: React.FC = () => {
     );
   }
 
-  if (!destination) {
+  if (error || !destination) {
     return (
       <div className="min-h-screen bg-gray-50 py-12">
         <div className="container mx-auto px-4">
@@ -320,7 +166,7 @@ const DestinationDetail: React.FC = () => {
                 </div>
               </div>
               <p className="text-xs text-white/70">
-                Photo by <a href={`https://www.pexels.com/@${destination.imageCredit.toLowerCase().replace(/\s+/g, '-')}/`} className="underline hover:text-white\" target="_blank\" rel="noopener noreferrer">{destination.imageCredit}</a> on Pexels
+                Photo by <a href={`https://www.pexels.com/@${destination.imageCredit.toLowerCase().replace(/\s+/g, '-')}/`} className="underline hover:text-white" target="_blank" rel="noopener noreferrer">{destination.imageCredit}</a> on Pexels
               </p>
             </div>
           </div>
@@ -334,7 +180,7 @@ const DestinationDetail: React.FC = () => {
           <div className="lg:col-span-2">
             <div className="bg-white rounded-xl shadow-md overflow-hidden mb-8">
               <div className="p-6 md:p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">About {destination.name}</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">About {destination.name}</h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   {destination.longDescription || destination.description}
                 </p>
@@ -518,13 +364,11 @@ const DestinationDetail: React.FC = () => {
         </div>
 
         {/* Related Destinations */}
-        <div className="mt-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">You Might Also Like</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {destinations
-              .filter(d => d.id !== destination.id && d.type === destination.type)
-              .slice(0, 3)
-              .map(relatedDest => (
+        {relatedDestinations.length > 0 && (
+          <div className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">You Might Also Like</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {relatedDestinations.map(relatedDest => (
                 <Link 
                   key={relatedDest.id} 
                   to={`/travel/destinations/${relatedDest.id}`}
@@ -533,7 +377,7 @@ const DestinationDetail: React.FC = () => {
                   <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 h-full">
                     <div className="relative h-48 overflow-hidden">
                       <img 
-                        src={relatedDest.imageUrl} 
+                        src={relatedDest.featuredImageUrl} 
                         alt={relatedDest.name} 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
@@ -547,7 +391,7 @@ const DestinationDetail: React.FC = () => {
                       </div>
                     </div>
                     <div className="p-4">
-                      <p className="text-gray-600 text-sm line-clamp-2">{relatedDest.description}</p>
+                      <p className="text-gray-600 text-sm line-clamp-2">{relatedDest.shortDescription}</p>
                       <div className="mt-3 flex items-center justify-between">
                         <div className="flex items-center">
                           <Star className="h-4 w-4 text-yellow-400 mr-1" />
@@ -559,8 +403,9 @@ const DestinationDetail: React.FC = () => {
                   </div>
                 </Link>
               ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Call to Action */}
         <div className="mt-12 bg-blue-50 rounded-xl p-6 md:p-8">
