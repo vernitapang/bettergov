@@ -56,6 +56,8 @@ If the script reports LGUs as "not found":
 1. Check lgu-not-found.json for the list
 2. These LGUs need to be manually added to the correct province
 3. Common issues:
-   - Name variations (e.g., "Santa Maria" vs "Sta. Maria")
+   - Name variations 
+      - (e.g., "Santa Maria" vs "Sta. Maria")
+      - (e.g., "Gen. Luna" vs "General Luna")
    - Abbreviations (e.g., "CSJDM" for "City of San Jose del Monte")
    - Missing cities or municipalities in the database
