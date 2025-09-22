@@ -289,10 +289,10 @@
             "municipality": "La Paz",
             "zip_code": "2826",
             "mayor": {
-              "name": "JOSEPH STO. NIÑO B. BERNOS"
+              "name": "VENUSTIANO D. JORDAN"
             },
             "vice_mayor": {
-              "name": "BENITO E. NONO"
+              "name": "LORNA R. MANALO"
             }
           },
           {
@@ -399,10 +399,10 @@
             "municipality": "Pilar",
             "zip_code": "2812",
             "mayor": {
-              "name": "TYRON CHRISTOPHER R. BEROÑA"
+              "name": "CHARLIE F. PIZARRO, JR."
             },
             "vice_mayor": {
-              "name": "SAMSON C. LAGUESMA"
+              "name": "CECILIA R. GARCIA"
             }
           },
           {
@@ -419,10 +419,10 @@
             "municipality": "San Isidro",
             "zip_code": "2809",
             "mayor": {
-              "name": "ELMERANTE M. PACSA"
+              "name": "CESARIO I. LOPEZ, JR."
             },
             "vice_mayor": {
-              "name": "ELIXER M. PACSA"
+              "name": "ROBINSON D.C. FRANCISCO"
             }
           },
           {
@@ -864,10 +864,10 @@
             "municipality": "Rizal",
             "zip_code": "3808",
             "mayor": {
-              "name": "KARL BUGAO P. BAAC"
+              "name": "HANNA KATRINA L. ANDRES"
             },
             "vice_mayor": {
-              "name": "SAMUEL C. VALDEZ"
+              "name": "LITO V. ANDRES"
             }
           },
           {
@@ -1437,10 +1437,10 @@
             "municipality": "San Ildefonso",
             "zip_code": "2728",
             "mayor": {
-              "name": "AMANTE A. PURISIMA, II"
+              "name": "FERNANDO S. GALVEZ JR."
             },
             "vice_mayor": {
-              "name": "RENI PECHO"
+              "name": "CHARIZ G. CABANDE"
             }
           },
           {
@@ -1528,11 +1528,11 @@
             "municipality": "Santo Domingo",
             "zip_code": "2729",
             "mayor": {
-              "name": "ANNEA SINGSON DE LEON",
+              "name": "LEONIDO L. DE GUZMAN, JR.",
               "contact": "(077) 726-4036"
             },
             "vice_mayor": {
-              "name": "FELIX INGAN"
+              "name": "JHELYN D. VELASCO"
             }
           },
           {
@@ -1593,11 +1593,11 @@
           {
             "city": "San Fernando",
             "mayor": {
-              "name": "HERMENEGILDO A. GUALBERTO",
+              "name": "VILMA B. CALUAG",
               "contact": "(072) 888-6906; 687-8100 loc. 104"
             },
             "vice_mayor": {
-              "name": "PABLO C. ORTEGA",
+              "name": "AURELIO BRENZ P. GONZALES",
               "contact": "6075932 (072) 607-4632; 687-8100 loc. 145"
             }
           }
@@ -2154,10 +2154,10 @@
             "municipality": "San Manuel",
             "zip_code": "2438",
             "mayor": {
-              "name": "KENNETH MARCO  PEREZ"
+              "name": "DOÑA CRESENCIA R. TESORO"
             },
             "vice_mayor": {
-              "name": "ALAIN JERICO PEREZ",
+              "name": "SIR BENJAMIN R. TESORO",
               "contact": "(075) 565-2509"
             }
           },
@@ -2875,10 +2875,10 @@
             "municipality": "Quezon",
             "zip_code": "3324",
             "mayor": {
-              "name": "JIMMY S. GAMAZON JR."
+              "name": "MARIANO NORIEL M. JOSON"
             },
             "vice_mayor": {
-              "name": "DARYL G. GASCON"
+              "name": "JOSEFINA M. JOSON"
             }
           },
           {
@@ -3140,10 +3140,10 @@
             "municipality": "Quezon",
             "zip_code": "3713",
             "mayor": {
-              "name": "DOLORES B. BINWAG"
+              "name": "MARIANO NORIEL M. JOSON"
             },
             "vice_mayor": {
-              "name": "AMOR A. DINCOG"
+              "name": "JOSEFINA M. JOSON"
             }
           },
           {
@@ -3261,7 +3261,7 @@
               "name": "RHETT RONAN T. ANGARA"
             },
             "vice_mayor": {
-              "name": "PEDRO M. ONG JR."
+              "name": "DENISE ALYANNA D.J. ANGARA"
             }
           },
           {
@@ -3278,30 +3278,30 @@
             "municipality": "Dilasag",
             "zip_code": "3205",
             "mayor": {
-              "name": "JOE P. GOROSPE"
+              "name": "ROMNER A. AGUSTIN"
             },
             "vice_mayor": {
-              "name": "JANICE B. VILLAREAL"
+              "name": "FRANCISCO C. ALONZO"
             }
           },
           {
             "municipality": "Dinalungan",
             "zip_code": "3206",
             "mayor": {
-              "name": "MANUEL A. TORRES"
+              "name": "ARVEE A. VARGAS"
             },
             "vice_mayor": {
-              "name": "ZARAH IAN U. COMABIG"
+              "name": "MANUEL A. TORRES"
             }
           },
           {
             "municipality": "Dingalan",
             "zip_code": "3207",
             "mayor": {
-              "name": "SHIERWIN H. TAAY"
+              "name": "AURORA G. TAAY"
             },
             "vice_mayor": {
-              "name": "EDGARDO R. GALVEZ",
+              "name": "ABIGAIL T. GALVEZ",
               "contact": "(042) 724-3168"
             }
           },
@@ -3322,7 +3322,7 @@
               "name": "ARIEL S. BITONG"
             },
             "vice_mayor": {
-              "name": "AMADO M. GENETA",
+              "name": "ENRICO O. CORDOVA",
               "email": "amado.geneta@mariaaurora.gov.ph"
             }
           },
@@ -3330,10 +3330,10 @@
             "municipality": "San Luis",
             "zip_code": "3201",
             "mayor": {
-              "name": "ARIEL A. DE JESUS"
+              "name": "JAYSON S. SAGUM"
             },
             "vice_mayor": {
-              "name": "CHRISTOPHER A. MARZAN"
+              "name": "ROMAN A. SAGUM"
             }
           }
         ]
@@ -3345,27 +3345,27 @@
             "municipality": "Abucay",
             "zip_code": "2114",
             "mayor": {
-              "name": "RUBEN C. TAGLE"
+              "name": "ERIK J. MARTEL"
             },
             "vice_mayor": {
-              "name": "ROBERTO T. PABUSTAN JR."
+              "name": "ROBERTO T. PABUSTAN, JR."
             }
           },
           {
             "municipality": "Bagac",
             "zip_code": "2107",
             "mayor": {
-              "name": "ROMMEL V. DEL ROSARIO"
+              "name": "RON MICHEAL ALEXIS R. DEL ROSARIO"
             },
             "vice_mayor": {
-              "name": "RON MICHAEL ALEXIS R. DEL ROSARIO"
+              "name": "ROMMEL V DEL ROSARIO"
             }
           },
           {
             "municipality": "Dinalupihan",
             "zip_code": "2110",
             "mayor": {
-              "name": "GERMAN M. SANTOS JR."
+              "name": "GERMAN M. SANTOS , JR."
             },
             "vice_mayor": {
               "name": "FERNANDO P. MANALILI",
@@ -3376,7 +3376,7 @@
             "municipality": "Hermosa",
             "zip_code": "2111",
             "mayor": {
-              "name": "ANTONIO JOSEPH R. INTON"
+              "name": "ANNE LORRAINE C. ADORABLE-INTON"
             },
             "vice_mayor": {
               "name": "PATRICK S. RELLOSA"
@@ -3389,7 +3389,7 @@
               "name": "RICHIE JASON D. DAVID"
             },
             "vice_mayor": {
-              "name": "SARAH V. DAVID"
+              "name": "MARIE GRACE R. DAVID"
             }
           },
           {
@@ -3400,7 +3400,7 @@
               "contact": "(047) 935-1757 loc. 105"
             },
             "vice_mayor": {
-              "name": "ANGELITO S. RUBIA",
+              "name": "JESSE I. CONCEPCION",
               "contact": "935-1757 loc. 104"
             }
           },
@@ -3408,17 +3408,17 @@
             "municipality": "Morong",
             "zip_code": "2108",
             "mayor": {
-              "name": "CYNTHIA G. LINAO-ESTANISLAO"
+              "name": "LEILA G. LINAO-MUÑOZ"
             },
             "vice_mayor": {
-              "name": "LEILA G. LINAO-MUÑOZ"
+              "name": "CHERMAINE L. GARCIA"
             }
           },
           {
             "municipality": "Orani",
             "zip_code": "2112",
             "mayor": {
-              "name": "EFREN DOMINIC E. PASCUAL JR."
+              "name": "ANTONIO F.  ARIZAPA, JR."
             },
             "vice_mayor": {
               "name": "EMMANUEL R. ROMAN",
@@ -3455,6 +3455,17 @@
               "name": "RONALD M. ORTIGUERRA"
             }
           }
+        ],
+        "cities": [
+          {
+            "city": "Balanga City",
+            "mayor": {
+              "name": "RAQUEL FRANCIS D. GARCIA"
+            },
+            "vice_mayor": {
+              "name": "FRANCIS ANTHONY S. GARCIA"
+            }
+          }
         ]
       },
       {
@@ -3475,31 +3486,31 @@
             "municipality": "Balagtas",
             "zip_code": "3016",
             "mayor": {
-              "name": "ELADIO E. GONZALES JR.",
+              "name": "ADRIAN J. SANTIAGO",
               "contact": "(044) 693-7950"
             },
             "vice_mayor": {
-              "name": "ARIEL C. VALDERAMA"
+              "name": "MIKEE JANE P. GONDA"
             }
           },
           {
             "municipality": "Bocaue",
             "zip_code": "3018",
             "mayor": {
-              "name": "EDUARDO J. VILLANUEVA JR."
+              "name": "EDUARDO VILLANUEVA , JR."
             },
             "vice_mayor": {
               "name": "SHERWIN N. TUGNA"
             }
           },
           {
-            "municipality": "Bulacan",
+            "municipality": "Bulakan",
             "zip_code": "3017",
             "mayor": {
               "name": "VERGEL C. MENESES"
             },
             "vice_mayor": {
-              "name": "REINA RICA C. SANCHEZ"
+              "name": "ARON RONALD R. CRUZ"
             }
           },
           {
@@ -3524,7 +3535,7 @@
             }
           },
           {
-            "municipality": "Doña Remedios Trinidad",
+            "municipality": "DRT",
             "zip_code": "3009",
             "mayor": {
               "name": "RONALDO T. FLORES"
@@ -3537,11 +3548,11 @@
             "municipality": "Guiguinto",
             "zip_code": "3015",
             "mayor": {
-              "name": "AGATHA PAULA A. CRUZ",
+              "name": "AMBROSIO C. CRUZ, JR.",
               "contact": "(044) 919-8260 loc. 241"
             },
             "vice_mayor": {
-              "name": "BANJO S. ESTRELLA",
+              "name": "ELISEO B. SANTOS, JR.",
               "contact": "919-8260 loc. 216"
             }
           },
@@ -3549,22 +3560,22 @@
             "municipality": "Hagonoy",
             "zip_code": "3002",
             "mayor": {
-              "name": "FLORDELIZA C. MANLAPAZ",
+              "name": "MA. ROSARIO SY-ALVARADO-MENDOZA",
               "contact": "(044) 794-4445 loc. 1030"
             },
             "vice_mayor": {
-              "name": "MA. ROSARIO R. SY-ALVARADO"
+              "name": "LADISLAO E. DELA CRUZ, JR."
             }
           },
           {
             "municipality": "Marilao",
             "zip_code": "3019",
             "mayor": {
-              "name": "HENRY R. LUTAO",
+              "name": "JEMINA M. SY",
               "contact": "(044) 919-1010"
             },
             "vice_mayor": {
-              "name": "JUN BOB J. DELA CRUZ"
+              "name": "ARIEL  P. AMADOR"
             }
           },
           {
@@ -3574,17 +3585,17 @@
               "name": "MARIA ELENA L. GERMAR"
             },
             "vice_mayor": {
-              "name": "PATRICIO I. GENER"
+              "name": "GIULIUS CEAZAR S. IAPINO"
             }
           },
           {
             "municipality": "Obando",
             "zip_code": "3021",
             "mayor": {
-              "name": "LEONARDO D. VALEDA"
+              "name": "LEONARDO D VALEDA"
             },
             "vice_mayor": {
-              "name": "ARVIN E. DELA CRUZ"
+              "name": "ROWELL SA RILLERA"
             }
           },
           {
@@ -3594,29 +3605,29 @@
               "name": "ENRICO A. ROQUE"
             },
             "vice_mayor": {
-              "name": "LUISA P. SEBASTIAN"
+              "name": "CRISPIN D.L. CASTRO"
             }
           },
           {
             "municipality": "Paombong",
             "zip_code": "3001",
             "mayor": {
-              "name": "MARYANNE P. MARCOS",
+              "name": "MARK IAN P. MARCOS",
               "contact": "(044) 760-5044"
             },
             "vice_mayor": {
-              "name": "ALFREDO JC. CASTRO JR."
+              "name": "ALFREDO B. CASTRO JR."
             }
           },
           {
             "municipality": "Plaridel",
             "zip_code": "3004",
             "mayor": {
-              "name": "JOCELL AIMEE R. VISTAN-CASAJE",
+              "name": "JOCELL AIMEE R. VISTAN CASAJE",
               "contact": "(044) 794-0119 loc. 1001"
             },
             "vice_mayor": {
-              "name": "LORIE C. VINTA",
+              "name": "IMELDA  G. DE LEON",
               "contact": "794-0119 loc. 1004"
             }
           },
@@ -3624,11 +3635,11 @@
             "municipality": "Pulilan",
             "zip_code": "3005",
             "mayor": {
-              "name": "MARIA ROSARIO O. MONTEJO",
+              "name": "ROLANDO S. PERALTA JR.",
               "contact": "(044) 764-0100"
             },
             "vice_mayor": {
-              "name": "ROLANDO S. PERALTA JR."
+              "name": "IMELDA D.J. CRUZ"
             }
           },
           {
@@ -3645,33 +3656,71 @@
             "municipality": "San Miguel",
             "zip_code": "3011",
             "mayor": {
-              "name": "RODERICK DG. TIONGSON",
+              "name": "JOHN A. ALVAREZ",
               "contact": "(044) 764-2125"
             },
             "vice_mayor": {
-              "name": "JOHN A. ALVAREZ"
+              "name": "GEROME D. REYES"
             }
           },
           {
             "municipality": "San Rafael",
             "zip_code": "3008",
             "mayor": {
-              "name": "MARK CHOLO I. VIOLAGO",
+              "name": "CIPRIANO D. VIOLAGO, JR.",
               "contact": "(044) 764-5457 loc. 130"
             },
             "vice_mayor": {
-              "name": "MARILYN S. VENERACION"
+              "name": "EDISON M. VENERACION"
             }
           },
           {
-            "municipality": "Santa Maria",
+            "municipality": "Sta. Maria",
             "zip_code": "3022",
             "mayor": {
-              "name": "BARTOLOME D. RAMOS",
+              "name": "BARTOLOME R.  RAMOS",
               "contact": "(044) 641-1601"
             },
             "vice_mayor": {
-              "name": "PABLO L. JUAN"
+              "name": "ROBERTO B. PEREZ"
+            }
+          }
+        ],
+        "cities": [
+          {
+            "city": "City of Baliwag",
+            "mayor": {
+              "name": "SONIA V. ESTRELLA"
+            },
+            "vice_mayor": {
+              "name": "FERDINAND V. ESTRELLA"
+            }
+          },
+          {
+            "city": "CSJDM",
+            "mayor": {
+              "name": "FLORIDA P. ROBES"
+            },
+            "vice_mayor": {
+              "name": "ARLENE B. ARCIAGA"
+            }
+          },
+          {
+            "city": "Malolos City",
+            "mayor": {
+              "name": "CHRISTIAN D. NATIVIDAD"
+            },
+            "vice_mayor": {
+              "name": "GILBERT T. GATCHALIAN"
+            }
+          },
+          {
+            "city": "Meycauayan City",
+            "mayor": {
+              "name": "HENRY R. VILLARICA"
+            },
+            "vice_mayor": {
+              "name": "JOSEFINA O. VIOLAGO"
             }
           }
         ]
@@ -3686,7 +3735,7 @@
               "name": "GILBERT G. MORENO"
             },
             "vice_mayor": {
-              "name": "ERWIN DYAN D. JAVALUYAS"
+              "name": "AURORA D. MORENO"
             }
           },
           {
@@ -3703,10 +3752,10 @@
             "municipality": "Cabiao",
             "zip_code": "3107",
             "mayor": {
-              "name": "RAMIL B. RIVERA"
+              "name": "RAV KEVIN M. RIVERA"
             },
             "vice_mayor": {
-              "name": "MARCELINO M. SIMBILLO"
+              "name": "RAMIL B. RIVERA"
             }
           },
           {
@@ -3723,11 +3772,11 @@
             "municipality": "Cuyapo",
             "zip_code": "3117",
             "mayor": {
-              "name": "FLORIDA P. ESTEBAN",
+              "name": "JOSE S. HIDALGO, JR.",
               "contact": "(044) 951-5597"
             },
             "vice_mayor": {
-              "name": "CINDERELLA E. RAMOS"
+              "name": "FLORIDA P. ESTEBAN, M.D."
             }
           },
           {
@@ -3770,34 +3819,34 @@
               "name": "JESULITO E. GALAPON"
             },
             "vice_mayor": {
-              "name": "DARLENE JAHNE ANTOINETTE N. BELTRAN"
+              "name": "JOHN CARLO P. DIZON"
             }
           },
           {
             "municipality": "Jaen",
             "zip_code": "3109",
             "mayor": {
-              "name": "SYLVIA C. AUSTRIA"
+              "name": "SYLVESTER C. AUSTRIA"
             },
             "vice_mayor": {
-              "name": "SYLVESTER C. AUSTRIA"
+              "name": "CRISANTO E. MATIAS"
             }
           },
           {
             "municipality": "Laur",
             "zip_code": "3129",
             "mayor": {
-              "name": "CHRISTOPHER D. DAUS"
+              "name": "BENJAMIN A. PADILLA"
             },
             "vice_mayor": {
-              "name": "BENJAMIN A. PADILLA"
+              "name": "ALEXANDER A. DAUZ"
             }
           },
           {
             "municipality": "Licab",
             "zip_code": "3112",
             "mayor": {
-              "name": "EUFEMIA D. DOMINGO"
+              "name": "WILFREDO S. DOMINGO"
             },
             "vice_mayor": {
               "name": "OLIVER A. VILLAROMAN"
@@ -3807,40 +3856,40 @@
             "municipality": "Llanera",
             "zip_code": "3126",
             "mayor": {
-              "name": "RONNIE ROY G. PASCUAL"
+              "name": "MARILOU L. PASCUAL"
             },
             "vice_mayor": {
-              "name": "HERMOGENES A. TADIAMAN JR."
+              "name": "RONNIE ROY G. PASCUAL"
             }
           },
           {
             "municipality": "Lupao",
             "zip_code": "3122",
             "mayor": {
-              "name": "ALEX ROMMEL V. ROMANO"
+              "name": "GLENDA P. ROMANO"
             },
             "vice_mayor": {
-              "name": "GLENDA P. ROMANO"
+              "name": "ALEX ROMMEL P. ROMANO"
             }
           },
           {
             "municipality": "Nampicuan",
             "zip_code": "3116",
             "mayor": {
-              "name": "VICTOR M. BADAR"
+              "name": "MARIO G. LACUROM"
             },
             "vice_mayor": {
-              "name": "REMEDIOS T. BADAR"
+              "name": "VICTOR M. BADAR"
             }
           },
           {
             "municipality": "Pantabangan",
             "zip_code": "3124",
             "mayor": {
-              "name": "ROBERTO T. AGDIPA"
+              "name": "MONALIZA H. AGDIPA"
             },
             "vice_mayor": {
-              "name": "MONALIZA H. AGDIPA"
+              "name": "ROBERTO T. AGDIPA"
             }
           },
           {
@@ -3850,7 +3899,7 @@
               "name": "JOSELITO A. RAMOS"
             },
             "vice_mayor": {
-              "name": "FERMIN DC. FRANCISCO JR."
+              "name": "GENEFER DG. AVES"
             }
           },
           {
@@ -3877,10 +3926,111 @@
             "municipality": "San Antonio",
             "zip_code": "3108",
             "mayor": {
-              "name": "ARVIN C. SALONGA"
+              "name": "ARVIN ROLLY D. ANTIPOLO"
             },
             "vice_mayor": {
-              "name": "JULIETA E. MAXWELL"
+              "name": "JOSEPH JONATHAN A. BACTAD"
+            }
+          },
+          {
+            "municipality": "Gen. Natividad",
+            "mayor": {
+              "name": "HILARIO S. PONCE"
+            },
+            "vice_mayor": {
+              "name": "SAMSON C. CABERTO"
+            }
+          },
+          {
+            "municipality": "Gen. Tinio",
+            "mayor": {
+              "name": "SHERRY ANN D. BOLISAY"
+            },
+            "vice_mayor": {
+              "name": "MELVIN S. PASCUAL"
+            }
+          },
+          {
+            "municipality": "San Leonardo",
+            "mayor": {
+              "name": "NIÑA PAULINE N. JOSON"
+            },
+            "vice_mayor": {
+              "name": "FROILAN A. NAGAÑO"
+            }
+          },
+          {
+            "municipality": "Talavera",
+            "mayor": {
+              "name": "ARIES VINCENT PATRICK G. LIM"
+            },
+            "vice_mayor": {
+              "name": "NERITO S. SANTOS, JR."
+            }
+          },
+          {
+            "municipality": "Talugtug",
+            "mayor": {
+              "name": "PACIFICO B. MONTA"
+            },
+            "vice_mayor": {
+              "name": "FLORO C. PAGADUAN, JR."
+            }
+          },
+          {
+            "municipality": "Zaragoza",
+            "mayor": {
+              "name": "LOVELLA DG. BELMONTE-ESPIRITU"
+            },
+            "vice_mayor": {
+              "name": "EDWIN A. BUENDIA"
+            }
+          }
+        ],
+        "cities": [
+          {
+            "city": "Cabanatuan City",
+            "mayor": {
+              "name": "MYCA ELIZABETH R. VERGARA"
+            },
+            "vice_mayor": {
+              "name": "JOSELITO C. ROQUE"
+            }
+          },
+          {
+            "city": "Gapan City",
+            "mayor": {
+              "name": "EMARY JOY D. PASCUAL"
+            },
+            "vice_mayor": {
+              "name": "MAXIMUS RODRIGO P. HOWLEY"
+            }
+          },
+          {
+            "city": "Palayan City",
+            "mayor": {
+              "name": "VIANDREI NICOLE J. CUEVAS"
+            },
+            "vice_mayor": {
+              "name": "ROMARIC S. CAPINPIN"
+            }
+          },
+          {
+            "city": "San Jose City",
+            "mayor": {
+              "name": "JOSEL F. VIOLAGO"
+            },
+            "vice_mayor": {
+              "name": "EVANGEL SHALOM S. MANUGUE"
+            }
+          },
+          {
+            "city": "Science City of Muñoz",
+            "mayor": {
+              "name": "BABY ARMI L. ALVAREZ"
+            },
+            "vice_mayor": {
+              "name": "NESTOR L. ALVAREZ"
             }
           }
         ]
@@ -3902,7 +4052,7 @@
             "municipality": "Arayat",
             "zip_code": "2012",
             "mayor": {
-              "name": "MARIA LOURDES M. ALEJANDRINO"
+              "name": "JEFFREY M. LURIZ"
             },
             "vice_mayor": {
               "name": "RAMON M. CHANGCOCO"
@@ -3915,7 +4065,7 @@
               "name": "EDUARDO G. DATU"
             },
             "vice_mayor": {
-              "name": "RON EARVIN E. DUNGCA"
+              "name": "RON EARVIN E.  DUNGCA"
             }
           },
           {
@@ -3925,17 +4075,17 @@
               "name": "RENE E. MAGLANQUE"
             },
             "vice_mayor": {
-              "name": "RESTITUTO S. SIBUG"
+              "name": "THELMA C. MACAPAGAL"
             }
           },
           {
             "municipality": "Floridablanca",
             "zip_code": "2006",
             "mayor": {
-              "name": "DARWIN R. MANALANSAN"
+              "name": "MICHAEL L. GALANG"
             },
             "vice_mayor": {
-              "name": "MICHAEL L. GALANG"
+              "name": "ALLAN A. POLICARPIO"
             }
           },
           {
@@ -3945,7 +4095,7 @@
               "name": "ANTHONY JOSEPH S. TORRES"
             },
             "vice_mayor": {
-              "name": "BENJAMIN L. LIM JR."
+              "name": "BENJAMIN L. LIM, JR."
             }
           },
           {
@@ -3965,7 +4115,7 @@
               "name": "LEONARDO B. FLORES"
             },
             "vice_mayor": {
-              "name": "VINCE EDWARD F. FLORES"
+              "name": "VINCE EDWARD FLORES"
             }
           },
           {
@@ -3975,17 +4125,17 @@
               "name": "MARIA LOURDES P. LACSON"
             },
             "vice_mayor": {
-              "name": "JOSEPH G. GUZMAN"
+              "name": "ELLER V. PECSON"
             }
           },
           {
             "municipality": "Masantol",
             "zip_code": "2017",
             "mayor": {
-              "name": "JOSE ANTONIO C. BUSTOS"
+              "name": "DANILO S. GUINTU"
             },
             "vice_mayor": {
-              "name": "DANILO S. GUINTU"
+              "name": "LUCIA LIEZLE Y. GUINTU"
             }
           },
           {
@@ -3995,7 +4145,7 @@
               "name": "RODENCIO S. GONZALES"
             },
             "vice_mayor": {
-              "name": "SUSANA O. SIRON"
+              "name": "JONATHAN D. PANGAN"
             }
           },
           {
@@ -4012,10 +4162,10 @@
             "municipality": "Porac",
             "zip_code": "2008",
             "mayor": {
-              "name": "MYLA V. CLARETE"
+              "name": "JAIME V. CAPIL"
             },
             "vice_mayor": {
-              "name": "ROMAΝΟEL L. SANTOS"
+              "name": "TRISHA ANGELIE G. CAPIL"
             }
           },
           {
@@ -4035,27 +4185,27 @@
               "name": "ABUNDIO S. PUNSALAN JR."
             },
             "vice_mayor": {
-              "name": "ROMANOEL L. SANTOS"
+              "name": "JOSEPHINE ANNE D. CANLAS"
             }
           },
           {
-            "municipality": "Santa Ana",
+            "municipality": "Sta. Ana",
             "zip_code": "2022",
             "mayor": {
-              "name": "NORBERTO G. GAMBOA"
+              "name": "FERDINAND P. LABUNG"
             },
             "vice_mayor": {
-              "name": "RAMONCITO C. BARRO V"
+              "name": "RHODORA C. NACPIL"
             }
           },
           {
-            "municipality": "Santa Rita",
+            "municipality": "Sta. Rita",
             "zip_code": "2002",
             "mayor": {
-              "name": "ARTHUR L. SALALILA"
+              "name": "REYNAN S. CALO"
             },
             "vice_mayor": {
-              "name": "MERCEDITA B. CARREON"
+              "name": "FERDINAND L. SALALILA"
             }
           },
           {
@@ -4075,7 +4225,27 @@
               "name": "CATALINA M. CABRERA"
             },
             "vice_mayor": {
-              "name": "MAMERTO S. TAMAYO JR."
+              "name": "MAMERTO S. TAMAYO, JR."
+            }
+          }
+        ],
+        "cities": [
+          {
+            "city": "Mabalacat City",
+            "mayor": {
+              "name": "GERALD GUTTRIE P. AQUINO"
+            },
+            "vice_mayor": {
+              "name": "MARCOS T. CANLAS, JR."
+            }
+          },
+          {
+            "city": "Angeles City",
+            "mayor": {
+              "name": "CARMELO B. LAZATIN II"
+            },
+            "vice_mayor": {
+              "name": "AMOS B. RIVERA"
             }
           }
         ]
@@ -4090,28 +4260,28 @@
               "name": "GIAN PIERRE O. DE DIOS"
             },
             "vice_mayor": {
-              "name": "JOCELYN C. PUNZALAN"
+              "name": "CONCEPCION C. ALMAZAN"
             }
           },
           {
             "municipality": "Bamban",
             "zip_code": "2317",
             "mayor": {
-              "name": "LEONARDO D. ANUNCIACION"
+              "name": "JOSE M. SALTING, JR."
             },
             "vice_mayor": {
-              "name": "ERANO D. TIMBANG"
+              "name": "LEONARDO C. ANUNCIACION"
             }
           },
           {
             "municipality": "Camiling",
             "zip_code": "2306",
             "mayor": {
-              "name": "ERLON C. AGUSTIN",
+              "name": "JOYCE B. AGUSTIN",
               "contact": "(045) 934-0164"
             },
             "vice_mayor": {
-              "name": "NOEL B. DELA CRUZ"
+              "name": "GLADYS T. AGUSTIN-RESURRECION"
             }
           },
           {
@@ -4131,18 +4301,18 @@
               "name": "NOEL L. VILLANUEVA"
             },
             "vice_mayor": {
-              "name": "JOAN CARLA P. BAUTISTA"
+              "name": "EVELYN A. RIVERA"
             }
           },
           {
             "municipality": "Gerona",
             "zip_code": "2302",
             "mayor": {
-              "name": "ELOY C. ECLAR",
+              "name": "MAY B. ECLAR",
               "contact": "(045) 606-5573"
             },
             "vice_mayor": {
-              "name": "RONALD T. GO"
+              "name": "ENGR ELOY C. ECLAR"
             }
           },
           {
@@ -4159,7 +4329,7 @@
             "municipality": "Mayantoc",
             "zip_code": "2304",
             "mayor": {
-              "name": "ILUMINADO E. POBRE JR."
+              "name": "ILUMINADO E. POBRE, JR."
             },
             "vice_mayor": {
               "name": "VENUS R. TOMAS"
@@ -4169,10 +4339,10 @@
             "municipality": "Moncada",
             "zip_code": "2308",
             "mayor": {
-              "name": "ESTELITA M. AQUINO"
+              "name": "RAMON BENITO M. AQUINO"
             },
             "vice_mayor": {
-              "name": "RAMON BENITO M. AQUINO",
+              "name": "JESSIE E. AQUINO",
               "email": "SB@moncadatarlac.gov.ph"
             }
           },
@@ -4180,11 +4350,11 @@
             "municipality": "Paniqui",
             "zip_code": "2307",
             "mayor": {
-              "name": "LEONARDO M. ROXAS",
+              "name": "KATHLEEN C. ROXAS",
               "contact": "(045) 931-2161 loc. 101"
             },
             "vice_mayor": {
-              "name": "AIDA BIEN D. ROXAS"
+              "name": "JAKE P. ROXAS"
             }
           },
           {
@@ -4194,7 +4364,7 @@
               "name": "JOHN PAUL M. BALMORES"
             },
             "vice_mayor": {
-              "name": "BEN P. IDMILAO"
+              "name": "CONCEPCION A. ZARATE"
             }
           },
           {
@@ -4204,18 +4374,18 @@
               "name": "CELSO L. BANAG"
             },
             "vice_mayor": {
-              "name": "DIOSDADO T. REGINALDO"
+              "name": "EDGARDO F. SUNIGA JR."
             }
           },
           {
             "municipality": "San Clemente",
             "zip_code": "2305",
             "mayor": {
-              "name": "ELMA L. MACADAMIA",
+              "name": "ROSELLER M. TOLEDO",
               "contact": "(045) 934-1244"
             },
             "vice_mayor": {
-              "name": "ROSELLER M. TOLEDO"
+              "name": "ELMA L. MACADAMIA"
             }
           },
           {
@@ -4243,11 +4413,11 @@
             "municipality": "Santa Ignacia",
             "zip_code": "2303",
             "mayor": {
-              "name": "NORA T. MODOMO",
+              "name": "NATHANIEL L. TAN",
               "contact": "(045) 606-3190"
             },
             "vice_mayor": {
-              "name": "NATHANIEL L. TAN"
+              "name": "FRANCIS PONCE G. CANDELARIO"
             }
           },
           {
@@ -4258,6 +4428,17 @@
             },
             "vice_mayor": {
               "name": "TRISTAN REEVO P. GUIAM"
+            }
+          }
+        ],
+        "cities": [
+          {
+            "city": "Tarlac City",
+            "mayor": {
+              "name": "SUSAN A. YAP"
+            },
+            "vice_mayor": {
+              "name": "KATRINA THERESA A. GO"
             }
           }
         ]
@@ -4272,7 +4453,7 @@
               "name": "JUN OMAR C. EBDANE"
             },
             "vice_mayor": {
-              "name": "DORIS D. LADINES"
+              "name": "ATTY. EDMUND DANTE D. PEREZ"
             }
           },
           {
@@ -4319,28 +4500,27 @@
             "municipality": "Masinloc",
             "zip_code": "2211",
             "mayor": {
-              "name": "ARSENIA J. LIM",
-              "contact": "(047) 271-5289"
+              "name": "HAZEL J. LIM"
             },
             "vice_mayor": {
-              "name": "PEDRO O. ENCISO"
+              "name": "ARSENIA J. LIM"
             }
           },
           {
             "municipality": "Palauig",
             "zip_code": "2210",
             "mayor": {
-              "name": "BILLY M. ACERON"
+              "name": "CHRISTIAN DANIEL H. ACERON"
             },
             "vice_mayor": {
-              "name": "CHRISTIAN DANIEL H. ACERON"
+              "name": "BILLY M. ACERON"
             }
           },
           {
             "municipality": "San Antonio",
             "zip_code": "2206",
             "mayor": {
-              "name": "EDZEL L. LONZANIDA"
+              "name": "ARVIN ROLLY D. ANTIPOLO"
             },
             "vice_mayor": {
               "name": "JOSEPH JONATHAN A. BACTAD"
@@ -4360,10 +4540,39 @@
             "municipality": "San Marcelino",
             "zip_code": "2207",
             "mayor": {
-              "name": "ELMER R. SORIA"
+              "name": "ELVIS R. SORIA"
             },
             "vice_mayor": {
               "name": "CHRISTOPHER R. GONGORA"
+            }
+          },
+          {
+            "municipality": "Sta. Cruz",
+            "mayor": {
+              "name": "CONSOLACION M. MARTY"
+            },
+            "vice_mayor": {
+              "name": "MIGUEL M. MANIAGO, JR."
+            }
+          },
+          {
+            "municipality": "Subic",
+            "mayor": {
+              "name": "JONATHAN JOHN F. KHONGHUN"
+            },
+            "vice_mayor": {
+              "name": "LAURO B. SIMBOL"
+            }
+          }
+        ],
+        "cities": [
+          {
+            "city": "Olongapo City",
+            "mayor": {
+              "name": "ROLEN C. PAULINO JR."
+            },
+            "vice_mayor": {
+              "name": "KAYE ANN S. LEGASPI"
             }
           }
         ]
@@ -4659,11 +4868,11 @@
           {
             "municipality": "Sto. Tomas",
             "mayor": {
-              "name": "ARTH JHUN A. MARASIGAN",
+              "name": "JOHNNY A. SAMBO",
               "contact": "(043) 784-8022"
             },
             "vice_mayor": {
-              "name": "CATHERINE J. PEREZ"
+              "name": "GLORIA P. RONQUILLO"
             }
           },
           {
@@ -5269,11 +5478,11 @@
           {
             "municipality": "Santa Rosa",
             "mayor": {
-              "name": "ARLENE B. ARCILLAS",
+              "name": "CHRISTOPHER F. AGUILAR",
               "contact": "(049) 530-0015 loc. 5021; 534-1024"
             },
             "vice_mayor": {
-              "name": "ARNOLD B. ARCILLAS",
+              "name": "RICHARD D. DIMACALI",
               "contact": "(049) 530-0015 loc. 1402; 534-1024"
             }
           },
@@ -5690,10 +5899,10 @@
             "municipality": "San Narciso",
             "zip_code": "4313",
             "mayor": {
-              "name": "FLORABELLE U. UY-YAP"
+              "name": "LA RAINNE ABAD-SARMIENTO"
             },
             "vice_mayor": {
-              "name": "ELENA R. BABAO"
+              "name": "RICHARD LANCE R. RITUAL"
             }
           },
           {
