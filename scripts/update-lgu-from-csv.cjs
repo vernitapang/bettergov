@@ -8,6 +8,7 @@ const readline = require('readline');
 // File paths
 const lguFilePath = path.resolve(__dirname, '../src/data/directory/lgu.json');
 const backupPath = path.resolve(__dirname, `../src/data/directory/lgu-backup-${Date.now()}.json`);
+const notFoundPath = path.resolve(__dirname, '../src/data/directory/lgu-not-found.json');
 
 // Function to normalize names for comparison
 function normalizeName(name) {
@@ -205,6 +206,76 @@ async function updateFromCSV(csvPath) {
   // Save updated data
   fs.writeFileSync(lguFilePath, JSON.stringify(lguData, null, 2));
   
+  // Save not found localities to JSON file
+  if (notFound.length > 0) {
+    // Group not found items by locality type and organize data
+    const notFoundData = {
+      csvFile: path.basename(csvPath),
+      totalNotFound: notFound.length,
+      cities: [],
+      municipalities: []
+    };
+    
+    // Process and organize not found items
+    const processedLGUs = new Map();
+    
+    for (const item of notFound) {
+      const key = `${item.type}-${item.lgu}`;
+      
+      if (!processedLGUs.has(key)) {
+        processedLGUs.set(key, {
+          name: item.lgu,
+          type: item.type,
+          mayor: null,
+          vice_mayor: null
+        });
+      }
+      
+      const lgu = processedLGUs.get(key);
+      
+      if (item.position.toLowerCase().includes('mayor') && !item.position.toLowerCase().includes('vice')) {
+        lgu.mayor = {
+          name: item.official
+        };
+      } else if (item.position.toLowerCase().includes('vice')) {
+        lgu.vice_mayor = {
+          name: item.official
+        };
+      }
+    }
+    
+    // Separate into cities and municipalities
+    for (const lgu of processedLGUs.values()) {
+      if (lgu.type.toLowerCase() === 'city') {
+        notFoundData.cities.push({
+          city: lgu.name,
+          mayor: lgu.mayor,
+          vice_mayor: lgu.vice_mayor
+        });
+      } else {
+        notFoundData.municipalities.push({
+          municipality: lgu.name,
+          mayor: lgu.mayor,
+          vice_mayor: lgu.vice_mayor
+        });
+      }
+    }
+    
+    // Sort arrays alphabetically
+    notFoundData.cities.sort((a, b) => a.city.localeCompare(b.city));
+    notFoundData.municipalities.sort((a, b) => a.municipality.localeCompare(b.municipality));
+    
+    // Write to JSON file
+    fs.writeFileSync(notFoundPath, JSON.stringify(notFoundData, null, 2));
+    console.log(`\nNot found localities saved to: ${notFoundPath}`);
+  } else {
+    // If no items not found, check if the file exists and delete it
+    if (fs.existsSync(notFoundPath)) {
+      fs.unlinkSync(notFoundPath);
+      console.log(`\nAll localities found - removed ${path.basename(notFoundPath)}`);
+    }
+  }
+  
   // Print summary
   console.log('\n' + '='.repeat(80));
   console.log('UPDATE SUMMARY');
@@ -236,6 +307,9 @@ async function updateFromCSV(csvPath) {
   console.log('\n' + '='.repeat(80));
   console.log(`Updated file saved to: ${lguFilePath}`);
   console.log(`Backup saved to: ${backupPath}`);
+  if (notFound.length > 0) {
+    console.log(`Not found localities saved to: ${notFoundPath}`);
+  }
   console.log('='.repeat(80));
 }
 
