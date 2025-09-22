@@ -2294,49 +2294,6 @@
   },
   {
     "region": "REGION II CAGAYAN VALLEY",
-    "cities": [
-      {
-        "city": "Tuguegarao",
-        "mayor": {
-          "name": "MAILA ROSARIO S. TING-QUE"
-        },
-        "vice_mayor": {
-          "name": "ROSAURO RODRIGO G. RESUELLO"
-        }
-      },
-      {
-        "city": "Cauayan",
-        "mayor": {
-          "name": "CAESAR S. DY JR.",
-          "contact": "(078) 652-2017; 652-4112"
-        },
-        "vice_mayor": {
-          "name": "BENJAMIN J. DY III",
-          "contact": "(078) 652-4132; 652-2205"
-        }
-      },
-      {
-        "city": "Ilagan",
-        "mayor": {
-          "name": "JOSEMARIE L. DIAZ",
-          "contact": "(078) 624-1674"
-        },
-        "vice_mayor": {
-          "name": "JAY EVESON C. DIAZ",
-          "contact": "(078) 624-0878; 325-3574"
-        }
-      },
-      {
-        "city": "Santiago",
-        "mayor": {
-          "name": "ALYSSA SHEENA P. TAN",
-          "contact": "(078) 305-1104"
-        },
-        "vice_mayor": {
-          "name": "JAMAYNE C. TAN"
-        }
-      }
-    ],
     "provinces": [
       {
         "province": "BATANES PROVINCE",
@@ -2686,6 +2643,17 @@
               "name": "FRANCISCO N. MAMBA JR."
             }
           }
+        ],
+        "cities": [
+          {
+            "city": "Tuguegarao City",
+            "mayor": {
+              "name": "MAILA ROSARIO S. TING-QUE"
+            },
+            "vice_mayor": {
+              "name": "ROSAURO RODRIGO G. RESUELLO"
+            }
+          }
         ]
       },
       {
@@ -3030,6 +2998,40 @@
             },
             "vice_mayor": {
               "name": "CHRISTOPHER B. UY"
+            }
+          }
+        ],
+        "cities": [
+          {
+            "city": "Cauayan City",
+            "mayor": {
+              "name": "CAESAR S. DY JR.",
+              "contact": "(078) 652-2017; 652-4112"
+            },
+            "vice_mayor": {
+              "name": "BENJAMIN J. DY III",
+              "contact": "(078) 652-4132; 652-2205"
+            }
+          },
+          {
+            "city": "Ilagan City",
+            "mayor": {
+              "name": "JOSEMARIE L. DIAZ",
+              "contact": "(078) 624-1674"
+            },
+            "vice_mayor": {
+              "name": "JAY EVESON C. DIAZ",
+              "contact": "(078) 624-0878; 325-3574"
+            }
+          },
+          {
+            "city": "Santiago City",
+            "mayor": {
+              "name": "ALYSSA SHEENA P. TAN",
+              "contact": "(078) 305-1104"
+            },
+            "vice_mayor": {
+              "name": "JAMAYNE C. TAN"
             }
           }
         ]
