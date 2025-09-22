@@ -1,6 +1,3 @@
-// scripts/update-lgu-from-csv.cjs
-// Updates lgu.json file based on CSV data with format: locality_type, name, position, official_name
-
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
@@ -10,7 +7,6 @@ const lguFilePath = path.resolve(__dirname, '../src/data/directory/lgu.json');
 const backupPath = path.resolve(__dirname, `../src/data/directory/lgu-backup-${Date.now()}.json`);
 const notFoundPath = path.resolve(__dirname, '../src/data/directory/lgu-not-found.json');
 
-// Function to normalize names for comparison
 function normalizeName(name) {
   if (!name) return '';
   return name.toLowerCase()
@@ -25,7 +21,6 @@ function normalizeName(name) {
     .trim();
 }
 
-// Parse CSV line (handles comma inside quotes)
 function parseCSVLine(line) {
   const result = [];
   let current = '';
@@ -48,7 +43,6 @@ function parseCSVLine(line) {
   return result;
 }
 
-// Find and update LGU in the data structure
 function updateLGU(data, localityType, lguName, position, officialName) {
   const normalizedLGUName = normalizeName(lguName);
   const isCity = localityType.toLowerCase() === 'city';
@@ -57,17 +51,14 @@ function updateLGU(data, localityType, lguName, position, officialName) {
   let updated = false;
   let foundLocation = null;
   
-  // Search in all regions
   for (const region of data) {
     if (!region || typeof region !== 'object') continue;
     
-    // Check direct cities/municipalities
     if (Array.isArray(region[arrayName])) {
       for (const lgu of region[arrayName]) {
         if (lgu && lgu[fieldName]) {
           const normalizedCurrent = normalizeName(lgu[fieldName]);
           if (normalizedCurrent === normalizedLGUName) {
-            // Update the official's information
             if (position.toLowerCase().includes('mayor') && !position.toLowerCase().includes('vice')) {
               if (!lgu.mayor) lgu.mayor = {};
               lgu.mayor.name = officialName;
@@ -85,7 +76,6 @@ function updateLGU(data, localityType, lguName, position, officialName) {
       }
     }
     
-    // Check provinces
     if (Array.isArray(region.provinces)) {
       for (const province of region.provinces) {
         if (Array.isArray(province[arrayName])) {
@@ -93,7 +83,6 @@ function updateLGU(data, localityType, lguName, position, officialName) {
             if (lgu && lgu[fieldName]) {
               const normalizedCurrent = normalizeName(lgu[fieldName]);
               if (normalizedCurrent === normalizedLGUName) {
-                // Update the official's information
                 if (position.toLowerCase().includes('mayor') && !position.toLowerCase().includes('vice')) {
                   if (!lgu.mayor) lgu.mayor = {};
                   lgu.mayor.name = officialName;
@@ -119,7 +108,6 @@ function updateLGU(data, localityType, lguName, position, officialName) {
   return { updated, location: foundLocation };
 }
 
-// Main function to process CSV and update JSON
 async function updateFromCSV(csvPath) {
   if (!fs.existsSync(csvPath)) {
     console.error(`CSV file not found: ${csvPath}`);
@@ -128,14 +116,11 @@ async function updateFromCSV(csvPath) {
   
   console.log(`Reading CSV from: ${csvPath}\n`);
   
-  // Load current LGU data
   const lguData = JSON.parse(fs.readFileSync(lguFilePath, 'utf-8'));
   
-  // Create backup
   fs.writeFileSync(backupPath, JSON.stringify(lguData, null, 2));
   console.log(`Backup created: ${backupPath}\n`);
   
-  // Process CSV
   const fileStream = fs.createReadStream(csvPath);
   const rl = readline.createInterface({
     input: fileStream,
@@ -151,16 +136,12 @@ async function updateFromCSV(csvPath) {
   for await (const line of rl) {
     lineNumber++;
     
-    // Skip empty lines
     if (!line.trim()) continue;
-    
-    // Skip header if present
     if (lineNumber === 1 && line.toLowerCase().includes('locality_type')) {
       console.log('Skipping header row\n');
       continue;
     }
     
-    // Parse CSV line
     const parts = parseCSVLine(line);
     if (parts.length < 4) {
       console.warn(`Line ${lineNumber}: Invalid format (expected 4 columns, got ${parts.length})`);
@@ -169,13 +150,11 @@ async function updateFromCSV(csvPath) {
     
     const [localityType, lguName, position, officialName] = parts;
     
-    // Validate data
     if (!localityType || !lguName || !position || !officialName) {
       console.warn(`Line ${lineNumber}: Missing required data`);
       continue;
     }
     
-    // Update LGU data
     const result = updateLGU(lguData, localityType, lguName, position, officialName);
     
     if (result.updated) {
@@ -203,12 +182,9 @@ async function updateFromCSV(csvPath) {
     }
   }
   
-  // Save updated data
   fs.writeFileSync(lguFilePath, JSON.stringify(lguData, null, 2));
   
-  // Save not found localities to JSON file
   if (notFound.length > 0) {
-    // Group not found items by locality type and organize data
     const notFoundData = {
       csvFile: path.basename(csvPath),
       totalNotFound: notFound.length,
@@ -216,7 +192,6 @@ async function updateFromCSV(csvPath) {
       municipalities: []
     };
     
-    // Process and organize not found items
     const processedLGUs = new Map();
     
     for (const item of notFound) {
@@ -244,7 +219,6 @@ async function updateFromCSV(csvPath) {
       }
     }
     
-    // Separate into cities and municipalities
     for (const lgu of processedLGUs.values()) {
       if (lgu.type.toLowerCase() === 'city') {
         notFoundData.cities.push({
@@ -261,26 +235,22 @@ async function updateFromCSV(csvPath) {
       }
     }
     
-    // Sort arrays alphabetically
     notFoundData.cities.sort((a, b) => a.city.localeCompare(b.city));
     notFoundData.municipalities.sort((a, b) => a.municipality.localeCompare(b.municipality));
     
-    // Write to JSON file
     fs.writeFileSync(notFoundPath, JSON.stringify(notFoundData, null, 2));
     console.log(`\nNot found localities saved to: ${notFoundPath}`);
   } else {
-    // If no items not found, check if the file exists and delete it
     if (fs.existsSync(notFoundPath)) {
       fs.unlinkSync(notFoundPath);
       console.log(`\nAll localities found - removed ${path.basename(notFoundPath)}`);
     }
   }
   
-  // Print summary
   console.log('\n' + '='.repeat(80));
   console.log('UPDATE SUMMARY');
   console.log('='.repeat(80));
-  console.log(`Total lines processed: ${lineNumber - 1}`); // -1 for header
+  console.log(`Total lines processed: ${lineNumber - 1}`);
   console.log(`Successfully updated: ${updatedCount}`);
   console.log(`Not found: ${notFoundCount}`);
   
@@ -313,7 +283,6 @@ async function updateFromCSV(csvPath) {
   console.log('='.repeat(80));
 }
 
-// Check command line arguments
 if (process.argv.length < 3) {
   console.log('Usage: node update-lgu-from-csv.cjs <csv-file-path>');
   console.log('\nCSV Format:');
