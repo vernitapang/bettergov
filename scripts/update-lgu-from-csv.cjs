@@ -10,14 +10,27 @@ const notFoundPath = path.resolve(__dirname, '../src/data/directory/lgu-not-foun
 function normalizeName(name) {
   if (!name) return '';
   return name.toLowerCase()
-    .trim()
-    .replace(/^city of /i, '')
-    .replace(/^municipality of /i, '')
-    .replace(/ city$/i, '')
-    .replace(/ \(capital\)$/i, '')
-    .replace(/ñ/g, 'n')
-    .replace(/[^a-z0-9 ]/g, ' ')
     .replace(/\s+/g, ' ')
+    .replace(/[^\w\s]/g, '')
+    .replace(/\bcity\b/gi, '')
+    .replace(/\bmunicipality\b/gi, '')
+    .replace(/\bprovince\b/gi, '')
+    .replace(/^city of\s+/i, '')
+    .replace(/^municipality of\s+/i, '')
+    .replace(/\s+city$/i, '')
+    .replace(/\s+municipality$/i, '')
+    // Handle common abbreviations
+    .replace(/\bgen\b/gi, 'general')
+    .replace(/\bsta\b/gi, 'santa')
+    .replace(/\bsto\b/gi, 'santo')
+    .replace(/\bmt\b/gi, 'mount')
+    .replace(/\bst\b/gi, 'saint')
+    // Remove spaces in compound names
+    .replace(/mataas\s+na\s+kahoy/gi, 'mataasnakahoy')
+    .replace(/mendez\s+nunez/gi, 'mendez')
+    .replace(/mendez\s+nuñez/gi, 'mendez')
+    .replace(/mendeznunez/gi, 'mendez')
+    .replace(/mendeznuñez/gi, 'mendez')
     .trim();
 }
 
@@ -44,6 +57,11 @@ function parseCSVLine(line) {
 }
 
 function updateLGU(data, localityType, lguName, position, officialName) {
+  // Special handling for Mendez-Nuñez
+  if (lguName && lguName.toUpperCase().includes('MENDEZ')) {
+    lguName = 'Mendez';
+  }
+  
   const normalizedLGUName = normalizeName(lguName);
   const isCity = localityType.toLowerCase() === 'city';
   const fieldName = isCity ? 'city' : 'municipality';
