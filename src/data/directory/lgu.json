@@ -187,6 +187,17 @@
         ]
       }
     ],
+    "municipalities": [
+      {
+        "municipality": "Pateros",
+        "mayor": {
+          "name": "GERALD S. GERMAN"
+        },
+        "vice_mayor": {
+          "name": "CARLO UMAGAT SANTOS"
+        }
+      }
+    ],
     "slug": "national-capital-region"
   },
   {
@@ -3347,7 +3358,19 @@
         ]
       },
       {
-        "province": "Bataan",
+        "province": "BATAAN PROVINCE",
+        "cities": [
+          {
+            "city": "Balanga",
+            "zip_code": "2100",
+            "mayor": {
+              "name": "RAQUEL FRANCIS D. GARCIA"
+            },
+            "vice_mayor": {
+              "name": "FRANCIS ANTHONY S. GARCIA"
+            }
+          }
+        ],
         "municipalities": [
           {
             "municipality": "Abucay",
@@ -3461,17 +3484,6 @@
             },
             "vice_mayor": {
               "name": "RONALD M. ORTIGUERRA"
-            }
-          }
-        ],
-        "cities": [
-          {
-            "city": "Balanga City",
-            "mayor": {
-              "name": "RAQUEL FRANCIS D. GARCIA"
-            },
-            "vice_mayor": {
-              "name": "FRANCIS ANTHONY S. GARCIA"
             }
           }
         ]
@@ -4259,7 +4271,19 @@
         ]
       },
       {
-        "province": "Tarlac",
+        "province": "TARLAC PROVINCE",
+        "cities": [
+          {
+            "city": "Tarlac City",
+            "zip_code": "2300",
+            "mayor": {
+              "name": "SUSAN ARENO YAP-SULIT"
+            },
+            "vice_mayor": {
+              "name": "KATHERINE THERESE A. GO"
+            }
+          }
+        ],
         "municipalities": [
           {
             "municipality": "Anao",
@@ -4436,17 +4460,6 @@
             },
             "vice_mayor": {
               "name": "JUDE REY F. LUCINARIO"
-            }
-          }
-        ],
-        "cities": [
-          {
-            "city": "Tarlac City",
-            "mayor": {
-              "name": "SUSAN A. YAP"
-            },
-            "vice_mayor": {
-              "name": "KATRINA THERESA A. GO"
             }
           }
         ]
