@@ -187,6 +187,17 @@
         ]
       }
     ],
+    "municipalities": [
+      {
+        "municipality": "Pateros",
+        "mayor": {
+          "name": "GERALD S. GERMAN"
+        },
+        "vice_mayor": {
+          "name": "CARLO UMAGAT SANTOS"
+        }
+      }
+    ],
     "slug": "national-capital-region"
   },
   {
