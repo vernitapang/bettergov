@@ -175,6 +175,180 @@
               "name": "CARLO U. SANTOS"
             }
           },
+    "provinces": [
+      {
+        "province": "National Capital Region",
+        "cities": [
+          {
+            "city": "Caloocan",
+            "mayor": {
+              "name": "DALE GONZALO R. MALAPITAN",
+              "contact": "5310-8531; 8288-8811 loc. 2223, 2224"
+            },
+            "vice_mayor": {
+              "name": "ANNA KARINA R. TEH-LIMSICO",
+              "contact": "5319-5237; 8288-8811 loc. 2290"
+            }
+          },
+          {
+            "city": "Las Piñas",
+            "mayor": {
+              "name": "APRIL T. AGUILAR-NERY",
+              "contact": "8871-4343; 8871-4345; 8872-1788"
+            },
+            "vice_mayor": {
+              "name": "IMELDA T. AGUILAR"
+            }
+          },
+          {
+            "city": "Makati",
+            "mayor": {
+              "name": "MARIA LOURDES NANCY  S. BINAY",
+              "contact": "8898-8989; 8898-8933; 8882-5096"
+            },
+            "vice_mayor": {
+              "name": "ROMULO V. PEÑA JR.",
+              "contact": "8899-8910; 8898-8933; 8810-7039"
+            }
+          },
+          {
+            "city": "Malabon",
+            "mayor": {
+              "name": "JEANNIE N. SANDOVAL",
+              "contact": "8351-4733; 8281-4999 loc. 1715, 1717"
+            },
+            "vice_mayor": {
+              "name": "EDWARD C. NOLASCO"
+            }
+          },
+          {
+            "city": "Mandaluyong",
+            "mayor": {
+              "name": "CARMELITA A. ABALOS",
+              "contact": "8532-4492; 8532-5001 loc. 204"
+            },
+            "vice_mayor": {
+              "name": "ANTHONY S. SUVA"
+            }
+          },
+          {
+            "city": "Manila",
+            "mayor": {
+              "name": "FRANCISCO ISKO MORENO  M. DOMAGOSO",
+              "contact": "8714-9147"
+            },
+            "vice_mayor": {
+              "name": "ANGELA LEI CHI I. ATIENZA-VALDEPEÑAS",
+              "contact": "8516-9079"
+            }
+          },
+          {
+            "city": "Marikina",
+            "mayor": {
+              "name": "MARJORIE ANN MAAN  A. TEODORO",
+              "contact": "8682-9279; 8646-1634"
+            },
+            "vice_mayor": {
+              "name": "DEL R. DE GUZMAN",
+              "contact": "8646-1632"
+            }
+          },
+          {
+            "city": "Muntinlupa",
+            "mayor": {
+              "name": "ROZZANO RUFINO RUFFY B. BIAZON",
+              "contact": "8862-2525 loc. 142, 143"
+            },
+            "vice_mayor": {
+              "name": "STEPHANIE PHANIE G. TEVES-WONG",
+              "contact": "8840-6513; 8659-0172"
+            }
+          },
+          {
+            "city": "Navotas",
+            "mayor": {
+              "name": "JOHN REYNALD M. TIANGCO",
+              "contact": "8282-4174 loc. 800, 400"
+            },
+            "vice_mayor": {
+              "name": "TITO M. SANCHEZ",
+              "contact": "8283-7415 loc. 300, 801"
+            }
+          },
+          {
+            "city": "Parañaque",
+            "mayor": {
+              "name": "EDWIN L. OLIVAREZ",
+              "contact": "8805-7963"
+            },
+            "vice_mayor": {
+              "name": "FLORENCIO  C. BERNABE  III",
+              "contact": "8478-5477"
+            }
+          },
+          {
+            "city": "Pasay",
+            "mayor": {
+              "name": "IMELDA C. CALIXTO-RUBIANO",
+              "contact": "8853-9338"
+            },
+            "vice_mayor": {
+              "name": "MARK ANTHONY  A. CALIXTO",
+              "contact": "8831-0163; 8831-4266"
+            }
+          },
+          {
+            "city": "Pasig",
+            "mayor": {
+              "name": "VICTOR MA REGIS N. SOTTO",
+              "contact": "8643-1111 loc. 1801"
+            },
+            "vice_mayor": {
+              "name": "ROBERT VINCENT JUDE B. JAWORSKI JR.",
+              "contact": "8643-1111 loc. 1741 87097622"
+            }
+          },
+          {
+            "city": "Quezon City",
+            "mayor": {
+              "name": "MA. JOSEFINA G. BELMONTE"
+            },
+            "vice_mayor": {
+              "name": "GIAN CARLO G. SOTTO"
+            }
+          },
+          {
+            "city": "Taguig",
+            "mayor": {
+              "name": "MARIA LAARNI L. CAYETANO",
+              "contact": "8642-3588"
+            },
+            "vice_mayor": {
+              "name": "ARVIN IAN V. ALIT"
+            }
+          },
+          {
+            "city": "Valenzuela",
+            "mayor": {
+              "name": "WESLIE WES T. GATCHALIAN",
+              "contact": "8352-1000 loc. 1142, 1147"
+            },
+            "vice_mayor": {
+              "name": "MARLON PAULO IDOL C. ALEJANDRINO",
+              "contact": "8352-1000 loc. 1301, 1303"
+            }
+          }
+        ],
+        "municipalities": [
+          {
+            "municipality": "Pateros",
+            "mayor": {
+              "name": "GERALD S. GERMAN"
+            },
+            "vice_mayor": {
+              "name": "CARLO U. SANTOS"
+            }
+          },
           {
             "municipality": "San Juan",
             "mayor": {
@@ -3696,7 +3870,8 @@
         ],
         "cities": [
           {
-            "city": "City of Baliwag",
+            "city": "Cabanatuan",
+            "zip_code": "3100",
             "mayor": {
               "name": "SONIA V. ESTRELLA"
             },
@@ -3705,7 +3880,8 @@
             }
           },
           {
-            "city": "CSJDM",
+            "city": "Gapan",
+            "zip_code": "3108",
             "mayor": {
               "name": "FLORIDA P. ROBES"
             },
@@ -3714,7 +3890,8 @@
             }
           },
           {
-            "city": "Malolos City",
+            "city": "Palayan",
+            "zip_code": "3116",
             "mayor": {
               "name": "CHRISTIAN D. NATIVIDAD"
             },
@@ -3723,7 +3900,8 @@
             }
           },
           {
-            "city": "Meycauayan City",
+            "city": "San Jose",
+            "zip_code": "3120",
             "mayor": {
               "name": "HENRY R. VILLARICA"
             },
@@ -3982,63 +4160,7 @@
               "name": "PACIFICO B. MONTA"
             },
             "vice_mayor": {
-              "name": "FLORO C. PAGADUAN, JR."
-            }
-          },
-          {
-            "municipality": "Zaragoza",
-            "mayor": {
-              "name": "LOVELLA DG. BELMONTE-ESPIRITU"
-            },
-            "vice_mayor": {
-              "name": "EDWIN A. BUENDIA"
-            }
-          },
-          {
-            "mayor": {
-              "name": "DAMIAN T. LUZON"
-            },
-            "vice_mayor": {
-              "name": "GOLDA S. BALLESTA"
-            },
-            "municipality": "San Jose City"
-          }
-        ],
-        "cities": [
-          {
-            "city": "Cabanatuan City",
-            "mayor": {
-              "name": "MYCA ELIZABETH R. VERGARA"
-            },
-            "vice_mayor": {
-              "name": "JOSELITO C. ROQUE"
-            }
-          },
-          {
-            "city": "Gapan City",
-            "mayor": {
-              "name": "EMARY JOY D. PASCUAL"
-            },
-            "vice_mayor": {
-              "name": "MAXIMUS RODRIGO P. HOWLEY"
-            }
-          },
-          {
-            "city": "Palayan City",
-            "mayor": {
-              "name": "VIANDREI NICOLE J. CUEVAS"
-            },
-            "vice_mayor": {
-              "name": "ROMARIC S. CAPINPIN"
-            }
-          },
-          {
-            "city": "Science City of Muñoz",
-            "mayor": {
-              "name": "BABY ARMI L. ALVAREZ"
-            },
-            "vice_mayor": {
-              "name": "NESTOR L. ALVAREZ"
+              "name": "Marcos T. Castro Jr."
             }
           }
         ]
@@ -4239,21 +4361,13 @@
         ],
         "cities": [
           {
-            "city": "Mabalacat City",
+            "city": "Tarlac City",
+            "zip_code": "2300",
             "mayor": {
               "name": "GERALD GUTTRIE P. AQUINO"
             },
             "vice_mayor": {
-              "name": "MARCOS T. CANLAS, JR."
-            }
-          },
-          {
-            "city": "Angeles City",
-            "mayor": {
-              "name": "CARMELO B. LAZATIN II"
-            },
-            "vice_mayor": {
-              "name": "AMOS B. RIVERA"
+              "name": "KATHERINE THERESE C. ANGELES"
             }
           }
         ]
@@ -4575,7 +4689,8 @@
         ],
         "cities": [
           {
-            "city": "Olongapo City",
+            "municipality": "Subic",
+            "zip_code": "2213",
             "mayor": {
               "name": "ROLEN C. PAULINO JR."
             },
