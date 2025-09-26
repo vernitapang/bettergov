@@ -175,180 +175,6 @@
               "name": "CARLO U. SANTOS"
             }
           },
-    "provinces": [
-      {
-        "province": "National Capital Region",
-        "cities": [
-          {
-            "city": "Caloocan",
-            "mayor": {
-              "name": "DALE GONZALO R. MALAPITAN",
-              "contact": "5310-8531; 8288-8811 loc. 2223, 2224"
-            },
-            "vice_mayor": {
-              "name": "ANNA KARINA R. TEH-LIMSICO",
-              "contact": "5319-5237; 8288-8811 loc. 2290"
-            }
-          },
-          {
-            "city": "Las Piñas",
-            "mayor": {
-              "name": "APRIL T. AGUILAR-NERY",
-              "contact": "8871-4343; 8871-4345; 8872-1788"
-            },
-            "vice_mayor": {
-              "name": "IMELDA T. AGUILAR"
-            }
-          },
-          {
-            "city": "Makati",
-            "mayor": {
-              "name": "MARIA LOURDES NANCY  S. BINAY",
-              "contact": "8898-8989; 8898-8933; 8882-5096"
-            },
-            "vice_mayor": {
-              "name": "ROMULO V. PEÑA JR.",
-              "contact": "8899-8910; 8898-8933; 8810-7039"
-            }
-          },
-          {
-            "city": "Malabon",
-            "mayor": {
-              "name": "JEANNIE N. SANDOVAL",
-              "contact": "8351-4733; 8281-4999 loc. 1715, 1717"
-            },
-            "vice_mayor": {
-              "name": "EDWARD C. NOLASCO"
-            }
-          },
-          {
-            "city": "Mandaluyong",
-            "mayor": {
-              "name": "CARMELITA A. ABALOS",
-              "contact": "8532-4492; 8532-5001 loc. 204"
-            },
-            "vice_mayor": {
-              "name": "ANTHONY S. SUVA"
-            }
-          },
-          {
-            "city": "Manila",
-            "mayor": {
-              "name": "FRANCISCO ISKO MORENO  M. DOMAGOSO",
-              "contact": "8714-9147"
-            },
-            "vice_mayor": {
-              "name": "ANGELA LEI CHI I. ATIENZA-VALDEPEÑAS",
-              "contact": "8516-9079"
-            }
-          },
-          {
-            "city": "Marikina",
-            "mayor": {
-              "name": "MARJORIE ANN MAAN  A. TEODORO",
-              "contact": "8682-9279; 8646-1634"
-            },
-            "vice_mayor": {
-              "name": "DEL R. DE GUZMAN",
-              "contact": "8646-1632"
-            }
-          },
-          {
-            "city": "Muntinlupa",
-            "mayor": {
-              "name": "ROZZANO RUFINO RUFFY B. BIAZON",
-              "contact": "8862-2525 loc. 142, 143"
-            },
-            "vice_mayor": {
-              "name": "STEPHANIE PHANIE G. TEVES-WONG",
-              "contact": "8840-6513; 8659-0172"
-            }
-          },
-          {
-            "city": "Navotas",
-            "mayor": {
-              "name": "JOHN REYNALD M. TIANGCO",
-              "contact": "8282-4174 loc. 800, 400"
-            },
-            "vice_mayor": {
-              "name": "TITO M. SANCHEZ",
-              "contact": "8283-7415 loc. 300, 801"
-            }
-          },
-          {
-            "city": "Parañaque",
-            "mayor": {
-              "name": "EDWIN L. OLIVAREZ",
-              "contact": "8805-7963"
-            },
-            "vice_mayor": {
-              "name": "FLORENCIO  C. BERNABE  III",
-              "contact": "8478-5477"
-            }
-          },
-          {
-            "city": "Pasay",
-            "mayor": {
-              "name": "IMELDA C. CALIXTO-RUBIANO",
-              "contact": "8853-9338"
-            },
-            "vice_mayor": {
-              "name": "MARK ANTHONY  A. CALIXTO",
-              "contact": "8831-0163; 8831-4266"
-            }
-          },
-          {
-            "city": "Pasig",
-            "mayor": {
-              "name": "VICTOR MA REGIS N. SOTTO",
-              "contact": "8643-1111 loc. 1801"
-            },
-            "vice_mayor": {
-              "name": "ROBERT VINCENT JUDE B. JAWORSKI JR.",
-              "contact": "8643-1111 loc. 1741 87097622"
-            }
-          },
-          {
-            "city": "Quezon City",
-            "mayor": {
-              "name": "MA. JOSEFINA G. BELMONTE"
-            },
-            "vice_mayor": {
-              "name": "GIAN CARLO G. SOTTO"
-            }
-          },
-          {
-            "city": "Taguig",
-            "mayor": {
-              "name": "MARIA LAARNI L. CAYETANO",
-              "contact": "8642-3588"
-            },
-            "vice_mayor": {
-              "name": "ARVIN IAN V. ALIT"
-            }
-          },
-          {
-            "city": "Valenzuela",
-            "mayor": {
-              "name": "WESLIE WES T. GATCHALIAN",
-              "contact": "8352-1000 loc. 1142, 1147"
-            },
-            "vice_mayor": {
-              "name": "MARLON PAULO IDOL C. ALEJANDRINO",
-              "contact": "8352-1000 loc. 1301, 1303"
-            }
-          }
-        ],
-        "municipalities": [
-          {
-            "municipality": "Pateros",
-            "mayor": {
-              "name": "GERALD S. GERMAN"
-            },
-            "vice_mayor": {
-              "name": "CARLO U. SANTOS"
-            }
-          },
           {
             "municipality": "San Juan",
             "mayor": {
@@ -1637,7 +1463,7 @@
             "municipality": "San Vicente",
             "zip_code": "2726",
             "mayor": {
-              "name": "EDGAR T. CATARONGAN"
+              "name": "EDWIN T. CATARONGAN"
             },
             "vice_mayor": {
               "name": "TITO M. LUÑEZA"
@@ -1946,7 +1772,7 @@
             "municipality": "San Juan",
             "zip_code": "2514",
             "mayor": {
-              "name": "ARTURO P. VALDRIZ",
+              "name": "ARTURO P. VALDEZ",
               "contact": "(072) 242-5650"
             },
             "vice_mayor": {
@@ -3282,7 +3108,7 @@
             "municipality": "Dupax del Norte",
             "zip_code": "3706",
             "mayor": {
-              "name": "JUAN PAOLO E. CAYTON"
+              "name": "JOSEPH PAOLO E. CAYTON"
             },
             "vice_mayor": {
               "name": "RIC RONELSON D. ASUNCION"
@@ -4048,7 +3874,7 @@
             "municipality": "Lupao",
             "zip_code": "3122",
             "mayor": {
-              "name": "GLENDA P. ROMANO"
+              "name": "GLenda P. ROMANO"
             },
             "vice_mayor": {
               "name": "ALEX ROMMEL P. ROMANO"
@@ -4108,7 +3934,6 @@
             "municipality": "San Antonio",
             "zip_code": "3108",
             "mayor": {
-              "name": "GARY M. LAVIN"
               "name": "GARY M. LAVIN"
             },
             "vice_mayor": {
@@ -4421,12 +4246,10 @@
             }
           }
         ],
-        ],
         "cities": [
           {
             "city": "Mabalacat",
             "mayor": {
-              "name": "GERALD GUTTRIE P. AQUINO"
               "name": "GERALD GUTTRIE P. AQUINO"
             },
             "vice_mayor": {
